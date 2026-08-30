@@ -3,7 +3,7 @@
 🎮 Interested in **Game Development**
 🌱 Currently learning **C#, Unity & Godot**
 💬 Building AI-powered web apps on the side (finance, music, agentic tools)
-📫 Reach me: neeleshmalakar1@gmail.com · IG https://www.instagram.com/neels_archive?igsi=MWczeGlpM2Y0YWNoag==
+📫 Reach me: neeleshmalakar1@gmail.com · IG [@neels_archive](https://www.instagram.com/neels_archive?igsi=MWczeGlpM2Y0YWNoag==)
 
 ---
 
