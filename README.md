@@ -8,25 +8,6 @@
 
 ---
 
-## 🚀 Projects
-
-| Project | What it is | Stack |
-|---|---|---|
-| [**MiniCloud**](https://github.com/BlaZe08-Dev/Minicloud) | Solo-built distributed job-execution platform. V1: core execution, PostgreSQL persistence, retries and failure recovery. Roadmap: resource-aware scheduling, Redis Streams dispatch, Docker task isolation | Go, PostgreSQL |
-| [**CrimeIntel**](https://github.com/BlaZe08-Dev/Crime-Intel) | Hackathon project: AI-powered criminal network analysis desktop app for investigators. Local RAG assistant, relationship graph analytics (PageRank, betweenness, community detection, anomaly detection), tamper-evident hash-chained audit log, email-OTP auth, offline-first multi-investigator sync | Flutter (Linux desktop), SQLite, Ollama, Neon Postgres |
-| [**The Business Auditor**](https://github.com/BlaZe08-Dev/TBA-Business-Auditor) | Hackathon project (team Loop-Errors): AI agent that reconciles financial documents and shows its reasoning trail, with ledger, anomaly detection and CSV export. [Live demo](https://tba-business-auditor.vercel.app) | Next.js, FastAPI, Neon Postgres, Cloudflare R2, Claude API |
-| [**Smart AI Expense Categorizer**](https://github.com/BlaZe08-Dev/Smart-AI-expense-Categorizer) | AI-based expense categorization project | Python, scikit-learn |
-| [**Harmoniq**](https://github.com/BlaZe08-Dev/Harmoniq) | Mood-based music streaming web app with a cinematic dark-ambient UI and a modular Web Audio equalizer (presets, custom preset, bypass) | Flask, vanilla JS, Web Audio API |
-| [**Café website**](https://github.com/BlaZe08-Dev/cafe-website) | Premium, elegant café/lounge website, designed in Google Stitch and built for a client. [Live](https://cafe-website-rust-eight.vercel.app/) | HTML/CSS/JS, Vercel |
-| [**Salon demo**](https://github.com/BlaZe08-Dev/salon-demo) | Reusable beauty salon website template, content driven by a single `salon.json`. [Live](https://salon-ebon-six.vercel.app) | Vite, React, Vercel |
-
-### 🤝 Collaborations
-
-- [**LoopSatellite**](https://github.com/raunaksahahere/LoopSatellite) — team project, collaborator on [@raunaksahahere](https://github.com/raunaksahahere)'s repo
-- [**vista**](https://github.com/BlaZe08-Dev/vista) — fork of [Mantitup-Org/vista](https://github.com/Mantitup-Org/vista)
-
----
-
 ## 🛠️ Tech Stack
 
 **Languages**
