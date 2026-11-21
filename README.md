@@ -151,12 +151,17 @@ Built in collaboration with Raunak and other teammates.
 
 <div align="center">
 
-<a href="https://github.com/BlaZe08-Dev">
-<img src="https://img.shields.io/badge/GITHUB-00FF88?style=for-the-badge&logo=github&logoColor=black" />
+<a href="mailto:neeleshmalakar@gmail.com">
+<img src="https://img.shields.io/badge/EMAIL-00FF88?style=for-the-badge&logo=gmail&logoColor=black" alt="Email" />
 </a>
-
-<a href="https://www.linkedin.com/">
-<img src="https://img.shields.io/badge/LINKEDIN-00FF88?style=for-the-badge&logo=linkedin&logoColor=black" />
+<a href="https://www.instagram.com/neels_archive/">
+<img src="https://img.shields.io/badge/INSTAGRAM-00FF88?style=for-the-badge&logo=instagram&logoColor=black" alt="Instagram" />
+</a>
+<a href="https://medium.com/@Neelesh08">
+<img src="https://img.shields.io/badge/MEDIUM-00FF88?style=for-the-badge&logo=medium&logoColor=black" alt="Medium" />
+</a>
+<a href="https://github.com/BlaZe08-Dev">
+<img src="https://img.shields.io/badge/GITHUB-00FF88?style=for-the-badge&logo=github&logoColor=black" alt="GitHub" />
 </a>
 
 <br/><br/>
