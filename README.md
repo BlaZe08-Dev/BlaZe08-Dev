@@ -8,26 +8,28 @@
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3000&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=AI+%26+DS+Student;Software+Developer;Systems+Engineering+Enthusiast;Building+Things+That+Actually+Work." alt="Typing SVG" />
 </a>
 
-<br/>
+<p><b><i>Engineer first, not just a coder.</i></b></p>
 
-[![GitHub](https://img.shields.io/badge/GitHub-BlaZe08--Dev-00FF88?style=for-the-badge&logo=github&logoColor=black)](https://github.com/BlaZe08-Dev)
-[![Profile Views](https://komarev.com/ghpvc/?username=BlaZe08-Dev&style=for-the-badge&color=00FF88&label=PROFILE+VIEWS)](https://github.com/BlaZe08-Dev)
+<p>
+<code>neelesh@developer:~$ whoami</code>
+</p>
+
+<p>
+<code>◉ STATUS</code>&nbsp; Building &amp; Learning
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<code>▸ NOW</code>&nbsp; <a href="https://github.com/BlaZe08-Dev/MiniCloud"><b>MiniCloud</b></a>
+<br/>
+<code>◆ DOMAIN</code>&nbsp; Software · AI · Systems
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<code>⌁ FOCUS</code>&nbsp; Distributed Systems &amp; Full Stack
+</p>
+
+<a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GitHub-BlaZe08--Dev-00FF88?style=for-the-badge&logo=github&logoColor=black" alt="GitHub" /></a>
+<img src="https://komarev.com/ghpvc/?username=BlaZe08-Dev&style=for-the-badge&color=00FF88&label=PROFILE+VIEWS" alt="Profile Views" />
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:050505,50:00FF88,100:050505&height=2&section=header" width="100%" alt="" />
 
 </div>
-
----
-
-```text
-┌──[NEELESH@DEVELOPER]─────────────────────────────┐
-│                                                  │
-│  STATUS       : Building & Learning              │
-│  DOMAIN       : Software / AI / Systems          │
-│  FOCUS        : Distributed Systems & Full Stack │
-│  MINDSET      : Engineer > Just a Coder          │
-│  CURRENTLY    : MiniCloud                        │
-│                                                  │
-└──────────────────────────────────────────────────┘
-```
 
 ## `01`  ABOUT ME
 
