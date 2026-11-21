@@ -85,21 +85,51 @@ Built in collaboration with Raunak and other teammates.
 
 *Project descriptions are intentionally brief; visit the repositories for their implementation details.*
 
-## `04`  TECH STACK
+## `04`  ENGINEERING TOOLKIT
 
 <div align="center">
 
-### LANGUAGES
+<p><code>THE TOOLS I USE TO TURN IDEAS INTO WORKING SYSTEMS</code></p>
 
+<table>
+<tr>
+<td width="33%" align="center" valign="top">
+
+<strong>01 / LANGUAGES</strong>
+<br/>
+<sub>Building blocks</sub>
+<br/><br/>
 <img src="https://skillicons.dev/icons?i=go,python,c,js,ts&theme=dark" />
 
-### FRAMEWORKS & LIBRARIES
+</td>
+<td width="33%" align="center" valign="top">
 
+<strong>02 / DEVELOPMENT</strong>
+<br/>
+<sub>Apps & interfaces</sub>
+<br/><br/>
 <img src="https://skillicons.dev/icons?i=flask,nextjs,react,nodejs,tailwind&theme=dark" />
 
-### DATABASES & TOOLS
+</td>
+<td width="33%" align="center" valign="top">
 
+<strong>03 / SYSTEMS & TOOLS</strong>
+<br/>
+<sub>Data, workflow & environment</sub>
+<br/><br/>
 <img src="https://skillicons.dev/icons?i=postgres,git,github,linux,docker,vscode&theme=dark" />
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<code>GO</code> <code>PYTHON</code> <code>FULL-STACK</code> <code>POSTGRESQL</code> <code>LINUX</code> <code>GIT</code>
+
+<br/><br/>
+
+<sub>Continuously expanding the toolkit through projects, experiments and system-level learning.</sub>
 
 </div>
 
