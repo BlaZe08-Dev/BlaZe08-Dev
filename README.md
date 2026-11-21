@@ -1,4 +1,4 @@
- <!-- PROFILE README: BlaZe08-Dev -->
+<!-- PROFILE README: BlaZe08-Dev -->
 
 <div align="center">
 
@@ -8,24 +8,21 @@
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3000&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=AI+%26+DS+Student;Software+Developer;Systems+Engineering+Enthusiast;Building+Things+That+Actually+Work." alt="Typing SVG" />
 </a>
 
-<p><b><i>Engineer first, not just a coder.</i></b></p>
+<p><b>Engineer first. Curious by default. Always building.</b></p>
 
 <p>
-<code>neelesh@developer:~$ whoami</code>
+  <a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GitHub-BlaZe08--Dev-00FF88?style=flat-square&logo=github&logoColor=black" alt="GitHub profile" /></a>
+  <img src="https://komarev.com/ghpvc/?username=BlaZe08-Dev&style=flat-square&color=00FF88&label=PROFILE+VIEWS" alt="Profile views" />
+  <a href="https://github.com/BlaZe08-Dev/MiniCloud"><img src="https://img.shields.io/badge/FOCUS-MINICLOUD-00FF88?style=flat-square&logo=go&logoColor=black" alt="Current focus: MiniCloud" /></a>
 </p>
 
 <p>
-<code>◉ STATUS</code>&nbsp; Building &amp; Learning
-&nbsp;&nbsp;·&nbsp;&nbsp;
-<code>▸ NOW</code>&nbsp; <a href="https://github.com/BlaZe08-Dev/MiniCloud"><b>MiniCloud</b></a>
-<br/>
-<code>◆ DOMAIN</code>&nbsp; Software · AI · Systems
-&nbsp;&nbsp;·&nbsp;&nbsp;
-<code>⌁ FOCUS</code>&nbsp; Distributed Systems &amp; Full Stack
+  <code>AI &amp; DATA SCIENCE</code>
+  &nbsp;·&nbsp;
+  <code>SOFTWARE ENGINEERING</code>
+  &nbsp;·&nbsp;
+  <code>DISTRIBUTED SYSTEMS</code>
 </p>
-
-<a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GitHub-BlaZe08--Dev-00FF88?style=for-the-badge&logo=github&logoColor=black" alt="GitHub" /></a>
-<img src="https://komarev.com/ghpvc/?username=BlaZe08-Dev&style=for-the-badge&color=00FF88&label=PROFILE+VIEWS" alt="Profile Views" />
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:050505,50:00FF88,100:050505&height=2&section=header" width="100%" alt="" />
 
