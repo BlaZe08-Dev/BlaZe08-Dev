@@ -150,7 +150,7 @@ Built in collaboration with Raunak and other teammates.
 
 </div>
 
-## `06` // CONNECT
+## `06`  CONNECT
 
 <div align="center">
 
