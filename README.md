@@ -29,7 +29,7 @@
 └──────────────────────────────────────────────────┘
 ```
 
-## `01` // ABOUT ME
+## `01`  ABOUT ME
 
 Hey! I'm **Neelesh Malakar**, an AI & Data Science undergraduate and software developer interested in building practical software systems.
 
@@ -42,7 +42,7 @@ I enjoy working across the stack, understanding how systems work internally, and
 
 > My goal isn't just to write code. It's to understand and engineer the systems behind it.
 
-## `02` // CURRENTLY BUILDING
+## `02`  CURRENTLY BUILDING
 
 <div align="center">
 
@@ -62,7 +62,7 @@ A Go-based distributed computing platform where connected devices can submit, co
 
 [![Repository](https://img.shields.io/badge/EXPLORE-MINICLOUD-00FF88?style=for-the-badge&logo=github&logoColor=black)](https://github.com/BlaZe08-Dev/MiniCloud)
 
-## `03` // FEATURED PROJECTS
+## `03`  FEATURED PROJECTS
 
 ### Personal Projects
 
@@ -86,7 +86,7 @@ Built in collaboration with Raunak and other teammates.
 
 *Project descriptions are intentionally brief; visit the repositories for their implementation details.*
 
-## `04` // TECH STACK
+## `04`  TECH STACK
 
 <div align="center">
 
@@ -104,7 +104,7 @@ Built in collaboration with Raunak and other teammates.
 
 </div>
 
-## `05` // GITHUB ANALYTICS
+## `05`  GITHUB ANALYTICS
 
 <div align="center">
 
