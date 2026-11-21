@@ -11,7 +11,10 @@
 <p><b>Engineer first. Curious by default. Always building.</b></p>
 
 <p>
-  <a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GitHub-BlaZe08--Dev-00FF88?style=flat-square&logo=github&logoColor=black" alt="GitHub profile" /></a>
+  <a href="https://www.linkedin.com/in/neeleshmalakar/">
+<img src="https://img.shields.io/badge/LINKEDIN-00FF88?style=for-the-badge&logo=linkedin&logoColor=black" alt="LinkedIn" />
+</a>
+<a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GitHub-BlaZe08--Dev-00FF88?style=flat-square&logo=github&logoColor=black" alt="GitHub profile" /></a>
   <img src="https://komarev.com/ghpvc/?username=BlaZe08-Dev&style=flat-square&color=00FF88&label=PROFILE+VIEWS" alt="Profile views" />
   <a href="https://github.com/BlaZe08-Dev/MiniCloud"><img src="https://img.shields.io/badge/FOCUS-MINICLOUD-00FF88?style=flat-square&logo=go&logoColor=black" alt="Current focus: MiniCloud" /></a>
 </p>
