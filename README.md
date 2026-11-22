@@ -248,12 +248,11 @@ A collaborative project. The repository is private, so implementation details ar
 
 <img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/commit-telemetry.svg" width="100%" alt="Animated all-time commit telemetry banner" />
 
-<sub>878 ALL-TIME COMMITS · COUNT SHOWN DIRECTLY IN THE ANIMATED DISPLAY</sub>
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BlaZe08-Dev&layout=compact&hide_border=true&bg_color=050505&title_color=00FF88&text_color=FFFFFF" alt="Most used languages" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BlaZe08-Dev&layout=compact&hide_border=true&bg_color=10100f&title_color=8DA697&text_color=FAFAF9" alt="Most used languages" />
 
 <br/>
 
-<img width="70%" src="https://streak-stats.demolab.com?user=BlaZe08-Dev&theme=dark&hide_border=true&background=050505&ring=00FF88&fire=00FF88&currStreakLabel=00FF88" alt="GitHub contribution streak" />
+<img width="70%" src="https://streak-stats.demolab.com?user=BlaZe08-Dev&theme=dark&hide_border=true&background=10100f&ring=8DA697&fire=ED3426&currStreakLabel=8DA697" alt="GitHub contribution streak" />
 
 </div>
 
