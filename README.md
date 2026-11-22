@@ -2,11 +2,11 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/profile-hero.svg" width="100%" alt="Animated engineering terminal header for Neelesh Malakar, with orbiting system nodes, circuit pulses and scanning beam" />
+<img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/profile-hero.svg" width="100%" alt="Bold dashboard-inspired animated profile hero for Neelesh Malakar, with modular color tiles and engineering identity" />
 
 <br/>
 
-**Engineer first. Curious by default. Always building.**
+**I build things. I question how they work. Then I make them better.**
 
 <p>
   <a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GITHUB-BlaZe08--Dev-00FF88?style=flat-square&logo=github&logoColor=black" alt="GitHub" /></a>
