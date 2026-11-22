@@ -250,7 +250,7 @@ A collaborative project. The repository is private, so implementation details ar
 
 <sub>THE COUNTER BELOW USES ALL-TIME COMMITS, NOT JUST THIS YEAR.</sub>
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=BlaZe08-Dev&include_all_commits=true&show_icons=true&hide_border=true&bg_color=050505&title_color=00FF88&icon_color=00FF88&text_color=FFFFFF&rank_icon=github" alt="GitHub statistics including all-time total commits" />
+<img width="100%" src="https://github-readme-stats.vercel.app/api?username=BlaZe08-Dev&include_all_commits=true&count_private=true&number_format=long&show_icons=true&hide_border=true&bg_color=050505&title_color=00FF88&icon_color=00FF88&text_color=FFFFFF&rank_icon=github&custom_title=ALL-TIME%20GITHUB%20STATISTICS" alt="All-time GitHub statistics with total commit count shown in full number format" />
 <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BlaZe08-Dev&layout=compact&hide_border=true&bg_color=050505&title_color=00FF88&text_color=FFFFFF" alt="Most used languages" />
 
 <br/>
