@@ -2,11 +2,11 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/profile-hero.svg" width="100%" alt="Bold dashboard-inspired animated profile hero for Neelesh Malakar, with modular color tiles and engineering identity" />
+<img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/profile-hero.svg" width="100%" alt="Animated dark operations-dashboard-inspired profile hero for Neelesh Malakar, featuring project status, engineering focus and activity panels" />
 
 <br/>
 
-**I build things. I question how they work. Then I make them better.**
+**Think clearly. Build deliberately. Keep iterating.**
 
 <p>
   <a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GITHUB-BlaZe08--Dev-00FF88?style=flat-square&logo=github&logoColor=black" alt="GitHub" /></a>
