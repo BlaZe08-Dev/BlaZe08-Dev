@@ -174,7 +174,7 @@ A first-person multiplayer social-deduction game concept for 4–10 players, bui
 </td>
 <td width="50%" valign="top">
 
-<strong>06 / LOOPS PILL</strong>
+<strong>06 / LOOPSPILL</strong>
 
 <sub>REMOTE SENSING · SATELLITE DATA · AIS</sub>
 
