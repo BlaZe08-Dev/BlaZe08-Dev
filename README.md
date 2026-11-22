@@ -2,173 +2,285 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,50:003B25,100:00FF88&height=200&section=header&text=NEELESH%20MALAKAR&fontSize=42&fontColor=00FF88&fontAlignY=38&desc=BUILDING%20SYSTEMS.%20BREAKING%20LIMITS.&descSize=13&descAlignY=60&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,45:062D20,100:00FF88&height=220&section=header&text=NEELESH%20MALAKAR&fontSize=46&fontColor=00FF88&fontAlignY=38&desc=ENGINEERING%20SYSTEMS%20THAT%20DO%20REAL%20WORK&descSize=13&descAlignY=61&animation=fadeIn" width="100%" alt="Neelesh Malakar — Engineering systems that do real work" />
 
-<a href="https://git.io/typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3000&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=AI+%26+DS+Student;Software+Developer;Systems+Engineering+Enthusiast;Building+Things+That+Actually+Work." alt="Typing SVG" />
+<a href="https://readme-typing-svg.demolab.com">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&duration=3200&pause=1000&color=00FF88&center=true&vCenter=true&width=720&lines=AI+%26+Data+Science+Undergraduate;Software+Developer;Distributed+Systems+Enthusiast;Learning+by+building+real+software." alt="AI and Data Science undergraduate, software developer, distributed systems enthusiast" />
 </a>
 
-<p><b>Engineer first. Curious by default. Always building.</b></p>
+<br/>
+
+**Engineer first. Curious by default. Always building.**
 
 <p>
-  <a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GitHub-BlaZe08--Dev-00FF88?style=flat-square&logo=github&logoColor=black" alt="GitHub profile" /></a>
+  <a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GITHUB-BlaZe08--Dev-00FF88?style=flat-square&logo=github&logoColor=black" alt="GitHub" /></a>
   <img src="https://komarev.com/ghpvc/?username=BlaZe08-Dev&style=flat-square&color=00FF88&label=PROFILE+VIEWS" alt="Profile views" />
-  <a href="https://github.com/BlaZe08-Dev/MiniCloud"><img src="https://img.shields.io/badge/FOCUS-MINICLOUD-00FF88?style=flat-square&logo=go&logoColor=black" alt="Current focus: MiniCloud" /></a>
+  <a href="https://github.com/BlaZe08-Dev/MiniCloud"><img src="https://img.shields.io/badge/FLAGSHIP-MINICLOUD-00FF88?style=flat-square&logo=go&logoColor=black" alt="Flagship project MiniCloud" /></a>
 </p>
 
-<p>
-  <code>AI &amp; DATA SCIENCE</code>
-  &nbsp;·&nbsp;
-  <code>SOFTWARE ENGINEERING</code>
-  &nbsp;·&nbsp;
-  <code>DISTRIBUTED SYSTEMS</code>
-</p>
+<code>AI & DATA SCIENCE</code> &nbsp;·&nbsp; <code>SOFTWARE ENGINEERING</code> &nbsp;·&nbsp; <code>DISTRIBUTED SYSTEMS</code>
+
+<br/>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:050505,50:00FF88,100:050505&height=2&section=header" width="100%" alt="" />
 
 </div>
 
-## `01`  ABOUT ME
+## 00 // ENGINEERING PROFILE
 
-Hey! I'm **Neelesh Malakar**, an AI & Data Science undergraduate and software developer interested in building practical software systems.
+I'm **Neelesh Malakar**, an AI & Data Science undergraduate who enjoys building practical software and understanding the systems underneath it.
 
-I enjoy working across the stack, understanding how systems work internally, and turning complex ideas into working products.
+My interests sit at the intersection of **backend engineering, distributed systems, full-stack development and applied AI**. I learn by shipping projects, investigating failure modes and improving the architecture—not just by collecting frameworks.
 
-- Building distributed systems and developer-focused tools.
-- Exploring AI integration in real-world software.
-- Interested in backend engineering, system architecture and full-stack development.
-- Learning by building, experimenting and breaking things.
+| CURRENT INTERESTS | HOW I APPROACH BUILDING |
+|:---|:---|
+| Distributed systems & backend architecture | Understand the constraints before choosing the design |
+| AI integration & developer tooling | Use AI where it adds measurable value |
+| Full-stack applications | Build complete workflows, not disconnected screens |
+| Systems thinking & reliability | Test assumptions, document trade-offs and learn from failures |
 
-> My goal isn't just to write code. It's to understand and engineer the systems behind it.
+<blockquote>
+  <strong>My engineering principle:</strong> Don't just make it work. Understand why it works, where it breaks, and what it takes to make it dependable.
+</blockquote>
 
-## `02`  CURRENTLY BUILDING
+## 01 // FLAGSHIP BUILD
 
 <div align="center">
 
-### `MINICLOUD`
+<a href="https://github.com/BlaZe08-Dev/MiniCloud">
+  <img src="https://img.shields.io/badge/PROJECT-MINICLOUD-00FF88?style=for-the-badge&logo=go&logoColor=black" alt="MiniCloud" />
+</a>
+&nbsp;
+<img src="https://img.shields.io/badge/RELEASE-v1.1.0-111111?style=for-the-badge&logo=github&logoColor=00FF88" alt="Version 1.1.0" />
+&nbsp;
+<img src="https://img.shields.io/badge/STATUS-LEARNING%20%2F%20PRE--PRODUCTION-111111?style=for-the-badge" alt="Learning and pre-production status" />
 
-**Distributed Job Execution Platform**
+### Distributed Job Execution Platform
+
+**MiniCloud** is my individual Go-based project exploring the engineering realities of distributed job execution: coordination, worker capacity, durable state, leases, retries and recovery.
 
 </div>
 
-A Go-based distributed computing platform where connected devices can submit, coordinate and execute workloads across a network.
+**What is implemented**
+- A coordinator service that accepts jobs, registers workers, tracks heartbeats and dispatches attempts.
+- Independent worker processes that pull and execute allowlisted tasks with bounded concurrency.
+- PostgreSQL as the durable source of truth for jobs, attempts, workers and execution records.
+- A CLI for job submission, status inspection, attempt history and worker-capacity monitoring.
+- Assignment-based round-robin and FIFO-pull dispatch policies, bounded retries and lease-based attempt handling.
 
-- Hybrid-capable nodes
-- Distributed job execution
-- Durable job state
-- Scheduling and worker coordination
-- Fault tolerance and coordinator failover
+**Architecture at a glance**
 
-[![Repository](https://img.shields.io/badge/EXPLORE-MINICLOUD-00FF88?style=for-the-badge&logo=github&logoColor=black)](https://github.com/BlaZe08-Dev/MiniCloud)
+```text
+             CLI / Client
+                  |
+               HTTP API
+                  |
+          +---------------+
+          |  Coordinator  |
+          +---------------+
+             |         |
+       Dispatch     PostgreSQL
+             |
+       +-----+-----+
+       |           |
+   Worker A    Worker B
+   execute     execute
+   heartbeat   heartbeat
+```
 
-## `03`  FEATURED PROJECTS
+<sub>Current implementation, not a future-state diagram: one coordinator, independent worker processes and PostgreSQL.</sub>
 
-### Personal Projects
-
-| Project | Description | Stack |
-|:---|:---|:---|
-| [MiniCloud](https://github.com/BlaZe08-Dev/MiniCloud) | Distributed job execution platform | Go |
-| [Harmoniq](https://github.com/BlaZe08-Dev/Harmoniq) | Music discovery and listening experience | Flask, JavaScript |
-
-### Collaborative Projects
-
-Built in collaboration with Raunak and other teammates.
-
-| Project | Description |
-|:---|:---|
-| [Kavach Pay](https://github.com/raunaksahahere/kavachPay) | Payment-focused application |
-| [WebThreatDetection](https://github.com/raunaksahahere/webThreatDetection) | Web threat detection project |
-| [RogueSignal](https://github.com/raunaksahahere/RogueSignal) | Collaborative software project |
-| [LoopSpill](https://github.com/raunaksahahere/LoopSpill) | Collaborative software project |
-| [JOCKY](https://github.com/raunaksahahere/JOCKY) | Collaborative software project |
-| [LoopSatellite](https://github.com/raunaksahahere/LoopSatellite) | Collaborative software project |
-
-*Project descriptions are intentionally brief; visit the repositories for their implementation details.*
-
-## `04`  ENGINEERING TOOLKIT
+**Engineering note:** MiniCloud v1.1.0 is a learning-oriented, pre-production system. It is not multi-tenant and its API/worker endpoints do not yet provide authentication, authorization or TLS. It must not be exposed to untrusted networks. AI-assisted dispatch and coordinator failover remain post-V1 design ideas, not implemented capabilities.
 
 <div align="center">
 
-<p><code>THE TOOLS I USE TO TURN IDEAS INTO WORKING SYSTEMS</code></p>
+[![Explore MiniCloud](https://img.shields.io/badge/EXPLORE%20REPOSITORY-00FF88?style=for-the-badge&logo=github&logoColor=black)](https://github.com/BlaZe08-Dev/MiniCloud)
+
+</div>
+
+## 02 // SELECTED BUILDS
+
+A selection of individual and collaborative work. Team projects are labelled as collaborative; repository ownership does not imply sole authorship.
+
+### Individual projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<strong>01 / MINICLOUD</strong>
+
+<sub>GO · DISTRIBUTED SYSTEMS</sub>
+
+A distributed job-execution platform built to explore coordinator/worker orchestration, durable job state, dispatch policies and failure handling.
+
+<a href="https://github.com/BlaZe08-Dev/MiniCloud">SOURCE ↗</a>
+
+</td>
+<td width="50%" valign="top">
+
+<strong>02 / HARMONIQ</strong>
+
+<sub>PYTHON · FLASK · JAVASCRIPT · JAMENDO API</sub>
+
+A music discovery and playback web app with search, queue and playlist workflows, playback controls, recently played tracks and a responsive listening interface.
+
+<a href="https://github.com/BlaZe08-Dev/Harmoniq">SOURCE ↗</a> · <a href="https://harmoniq-yvun.onrender.com">LIVE DEMO ↗</a>
+
+</td>
+</tr>
+</table>
+
+### Collaborative projects
+
+<sub>Built with Raunak and other teammates. Contributions are collaborative, not presented as solo projects.</sub>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<strong>03 / KAVACH PAY</strong>
+
+<sub>NEXT.JS · NODE / HONO · POSTGRESQL · FRAUD RISK</sub>
+
+A simulated UPI-style payment experience with a deterministic fraud-risk engine that explains suspicious payment and collect-request signals in plain language. Hackathon prototype; payment rails and data are synthetic.
+
+<a href="https://github.com/raunaksahahere/kavachPay">SOURCE ↗</a>
+
+</td>
+<td width="50%" valign="top">
+
+<strong>04 / WEBTHREATDETECTION</strong>
+
+<sub>CYBERSECURITY · REACT · PYTHON · WEB3</sub>
+
+An evidence-based investigation tool for suspicious URLs, messages, raw emails and QR codes, with explainable findings and an on-chain report-integrity registry.
+
+<a href="https://github.com/raunaksahahere/webThreatDetection">SOURCE ↗</a>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<strong>05 / ROGUESIGNAL</strong>
+
+<sub>MULTIPLAYER · GAME SYSTEMS · SOCIAL DEDUCTION</sub>
+
+A first-person multiplayer social-deduction game concept for 4–10 players, built around roles, tasks, sabotage and proximity-based interaction.
+
+<a href="https://github.com/raunaksahahere/RogueSignal">SOURCE ↗</a>
+
+</td>
+<td width="50%" valign="top">
+
+<strong>06 / LOOPS PILL</strong>
+
+<sub>REMOTE SENSING · SATELLITE DATA · AIS</sub>
+
+A satellite-based oil-spill investigation workflow combining radar detection, backward drift modelling and vessel/AIS attribution to estimate likely spill origins.
+
+<a href="https://github.com/raunaksahahere/LoopSpill">SOURCE ↗</a>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<strong>07 / LOOPSATELLITE</strong>
+
+<sub>EARTH OBSERVATION · TIME SERIES · GEOSPATIAL AI</sub>
+
+A wetland-monitoring system for the East Kolkata Wetlands. Deterministic satellite-derived water measurements and seasonal anomaly detection support evidence-backed investigation.
+
+<a href="https://github.com/raunaksahahere/LoopSatellite">SOURCE ↗</a>
+
+</td>
+<td width="50%" valign="top">
+
+<strong>08 / JOCKY</strong>
+
+<sub>COLLABORATIVE PROJECT · PRIVATE REPOSITORY</sub>
+
+A collaborative project. The repository is private, so implementation details are intentionally not expanded here.
+
+<a href="https://github.com/raunaksahahere/JOCKY">REPOSITORY LINK ↗</a>
+
+</td>
+</tr>
+</table>
+
+## 03 // ENGINEERING TOOLKIT
+
+<div align="center">
+
+<sub>TOOLS AND TECHNOLOGIES I'VE WORKED WITH THROUGH PROJECTS AND PRACTICE</sub>
 
 <table>
 <tr>
 <td width="33%" align="center" valign="top">
 
 <strong>01 / LANGUAGES</strong>
-<br/>
-<sub>Building blocks</sub>
+
+<sub>Core programming</sub>
+
 <br/><br/>
-<img src="https://skillicons.dev/icons?i=go,python,c,js,ts&theme=dark" />
+
+<img src="https://skillicons.dev/icons?i=go,python,c,js,ts&theme=dark" alt="Go, Python, C, JavaScript and TypeScript" />
 
 </td>
 <td width="33%" align="center" valign="top">
 
-<strong>02 / DEVELOPMENT</strong>
-<br/>
-<sub>Apps & interfaces</sub>
+<strong>02 / APPLICATIONS</strong>
+
+<sub>Web and backend</sub>
+
 <br/><br/>
-<img src="https://skillicons.dev/icons?i=flask,nextjs,react,nodejs,tailwind&theme=dark" />
+
+<img src="https://skillicons.dev/icons?i=flask,nextjs,react,nodejs,tailwind&theme=dark" alt="Flask, Next.js, React, Node.js and Tailwind CSS" />
 
 </td>
 <td width="33%" align="center" valign="top">
 
 <strong>03 / SYSTEMS & TOOLS</strong>
-<br/>
-<sub>Data, workflow & environment</sub>
+
+<sub>Data and workflow</sub>
+
 <br/><br/>
-<img src="https://skillicons.dev/icons?i=postgres,git,github,linux,docker,vscode&theme=dark" />
+
+<img src="https://skillicons.dev/icons?i=postgres,git,github,linux,docker,vscode&theme=dark" alt="PostgreSQL, Git, GitHub, Linux, Docker and VS Code" />
 
 </td>
 </tr>
 </table>
 
-<br/>
-
 <code>GO</code> <code>PYTHON</code> <code>FULL-STACK</code> <code>POSTGRESQL</code> <code>LINUX</code> <code>GIT</code>
 
-<br/><br/>
-
-<sub>Continuously expanding the toolkit through projects, experiments and system-level learning.</sub>
-
 </div>
 
-## `05`  GITHUB ANALYTICS
+## 04 // GITHUB SIGNAL
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=BlaZe08-Dev&show_icons=true&hide_border=true&bg_color=050505&title_color=00FF88&icon_color=00FF88&text_color=FFFFFF&rank_icon=github" />
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BlaZe08-Dev&layout=compact&hide_border=true&bg_color=050505&title_color=00FF88&text_color=FFFFFF" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=BlaZe08-Dev&show_icons=true&hide_border=true&bg_color=050505&title_color=00FF88&icon_color=00FF88&text_color=FFFFFF&rank_icon=github" alt="GitHub profile statistics" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BlaZe08-Dev&layout=compact&hide_border=true&bg_color=050505&title_color=00FF88&text_color=FFFFFF" alt="Most used languages" />
 
 <br/>
 
-<img width="65%" src="https://streak-stats.demolab.com?user=BlaZe08-Dev&theme=dark&hide_border=true&background=050505&ring=00FF88&fire=00FF88&currStreakLabel=00FF88" />
+<img width="70%" src="https://streak-stats.demolab.com?user=BlaZe08-Dev&theme=dark&hide_border=true&background=050505&ring=00FF88&fire=00FF88&currStreakLabel=00FF88" alt="GitHub contribution streak" />
 
 </div>
 
-## `06`  CONNECT
+## 05 // FIND ME AROUND THE WEB
 
 <div align="center">
 
-<a href="mailto:neeleshmalakar@gmail.com">
-<img src="https://img.shields.io/badge/EMAIL-00FF88?style=for-the-badge&logo=gmail&logoColor=black" alt="Email" />
-</a>
-<a href="https://www.instagram.com/neels_archive/">
-<img src="https://img.shields.io/badge/INSTAGRAM-00FF88?style=for-the-badge&logo=instagram&logoColor=black" alt="Instagram" />
-</a>
-<a href="https://medium.com/@Neelesh08">
-<img src="https://img.shields.io/badge/MEDIUM-00FF88?style=for-the-badge&logo=medium&logoColor=black" alt="Medium" />
-</a>
-<a href="https://www.credly.com/users/neelesh-malakar">
-<img src="https://img.shields.io/badge/CREDLY-00FF88?style=for-the-badge&logo=credly&logoColor=black" alt="Credly" />
-</a>
-<a href="https://www.linkedin.com/in/neeleshmalakar/">
-<img src="https://img.shields.io/badge/LINKEDIN-00FF88?style=for-the-badge&logo=linkedin&logoColor=black" alt="LinkedIn" />
-</a>
-<a href="https://github.com/BlaZe08-Dev">
-<img src="https://img.shields.io/badge/GITHUB-00FF88?style=for-the-badge&logo=github&logoColor=black" alt="GitHub" />
-</a>
+<a href="mailto:neeleshmalakar@gmail.com"><img src="https://img.shields.io/badge/EMAIL-00FF88?style=for-the-badge&logo=gmail&logoColor=black" alt="Email Neelesh" /></a>
+<a href="https://www.linkedin.com/in/neeleshmalakar/"><img src="https://img.shields.io/badge/LINKEDIN-00FF88?style=for-the-badge&logo=linkedin&logoColor=black" alt="LinkedIn" /></a>
+<a href="https://www.instagram.com/neels_archive/"><img src="https://img.shields.io/badge/INSTAGRAM-00FF88?style=for-the-badge&logo=instagram&logoColor=black" alt="Instagram" /></a>
+<a href="https://medium.com/@Neelesh08"><img src="https://img.shields.io/badge/MEDIUM-00FF88?style=for-the-badge&logo=medium&logoColor=black" alt="Medium" /></a>
+<a href="https://www.credly.com/users/neelesh-malakar"><img src="https://img.shields.io/badge/CREDLY-00FF88?style=for-the-badge&logo=credly&logoColor=black" alt="Credly" /></a>
+<a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GITHUB-00FF88?style=for-the-badge&logo=github&logoColor=black" alt="GitHub" /></a>
 
 <br/><br/>
 
@@ -176,9 +288,9 @@ Built in collaboration with Raunak and other teammates.
 $ echo "Keep building. Keep questioning. Keep engineering."
 ```
 
-**`[ SYSTEM STATUS: ALWAYS BUILDING ]`**
+<strong><code>[ SYSTEM STATUS: ALWAYS BUILDING ]</code></strong>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF88,50:003B25,100:050505&height=100&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF88,50:003B25,100:050505&height=110&section=footer" width="100%" alt="" />
 
 </div>
 
