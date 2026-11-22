@@ -102,7 +102,7 @@ A selection of individual and collaborative work. Team projects are labelled as 
 
 <sub>GO · DISTRIBUTED SYSTEMS</sub>
 
-<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/minicloud.svg" width="100%" height="48" alt="MiniCloud dispatch animation" />
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/minicloud.svg" width="100%" height="76" alt="Animated MiniCloud illustration showing CLI submission, coordinator dispatch, worker pool and PostgreSQL storage" />
 
 A distributed job-execution platform built to explore coordinator/worker orchestration, durable job state, dispatch policies and failure handling.
 
@@ -115,7 +115,7 @@ A distributed job-execution platform built to explore coordinator/worker orchest
 
 <sub>PYTHON · FLASK · JAVASCRIPT · JAMENDO API</sub>
 
-<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/harmoniq.svg" width="100%" height="48" alt="Harmoniq audio waveform animation" />
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/harmoniq.svg" width="100%" height="76" alt="Animated Harmoniq music player with album art, equalizer and playback timeline" />
 
 A music discovery and playback web app with search, queue and playlist workflows, playback controls, recently played tracks and a responsive listening interface.
 
@@ -137,7 +137,7 @@ A music discovery and playback web app with search, queue and playlist workflows
 
 <sub>NEXT.JS · NODE / HONO · POSTGRESQL · FRAUD RISK</sub>
 
-<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/kavach.svg" width="100%" height="48" alt="Kavach Pay risk signal animation" />
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/kavach.svg" width="100%" height="76" alt="Animated Kavach Pay UPI request, signal analysis and risk decision illustration" />
 
 A simulated UPI-style payment experience with a deterministic fraud-risk engine that explains suspicious payment and collect-request signals in plain language. Hackathon prototype; payment rails and data are synthetic.
 
@@ -150,7 +150,7 @@ A simulated UPI-style payment experience with a deterministic fraud-risk engine 
 
 <sub>CYBERSECURITY · REACT · PYTHON · WEB3</sub>
 
-<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/webthreat.svg" width="100%" height="48" alt="WebThreatDetection scan animation" />
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/webthreat.svg" width="100%" height="76" alt="Animated WebThreatDetection evidence scanner and report workflow illustration" />
 
 An evidence-based investigation tool for suspicious URLs, messages, raw emails and QR codes, with explainable findings and an on-chain report-integrity registry.
 
@@ -165,7 +165,7 @@ An evidence-based investigation tool for suspicious URLs, messages, raw emails a
 
 <sub>MULTIPLAYER · GAME SYSTEMS · SOCIAL DEDUCTION</sub>
 
-<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/roguesignal.svg" width="100%" height="48" alt="RogueSignal multiplayer network animation" />
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/roguesignal.svg" width="100%" height="76" alt="Animated RogueSignal top-down multiplayer arena with player proximity and task station" />
 
 A first-person multiplayer social-deduction game concept for 4–10 players, built around roles, tasks, sabotage and proximity-based interaction.
 
@@ -178,7 +178,7 @@ A first-person multiplayer social-deduction game concept for 4–10 players, bui
 
 <sub>REMOTE SENSING · SATELLITE DATA · AIS</sub>
 
-<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/loopspill.svg" width="100%" height="48" alt="LoopSpill drift model animation" />
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/loopspill.svg" width="100%" height="76" alt="Animated LoopSpill satellite oil-spill detection, drift trajectory and AIS attribution illustration" />
 
 A satellite-based oil-spill investigation workflow combining radar detection, backward drift modelling and vessel/AIS attribution to estimate likely spill origins.
 
@@ -193,7 +193,7 @@ A satellite-based oil-spill investigation workflow combining radar detection, ba
 
 <sub>EARTH OBSERVATION · TIME SERIES · GEOSPATIAL AI</sub>
 
-<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/loopsatellite.svg" width="100%" height="48" alt="LoopSatellite orbital observation animation" />
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/loopsatellite.svg" width="100%" height="76" alt="Animated LoopSatellite wetland observation and water time-series illustration" />
 
 A wetland-monitoring system for the East Kolkata Wetlands. Deterministic satellite-derived water measurements and seasonal anomaly detection support evidence-backed investigation.
 
@@ -206,7 +206,7 @@ A wetland-monitoring system for the East Kolkata Wetlands. Deterministic satelli
 
 <sub>COLLABORATIVE PROJECT · PRIVATE REPOSITORY</sub>
 
-<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/jocky.svg" width="100%" height="48" alt="JOCKY collaboration status animation" />
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/jocky.svg" width="100%" height="76" alt="Animated JOCKY private collaborative project illustration" />
 
 A collaborative project. The repository is private, so implementation details are intentionally not expanded here.
 
