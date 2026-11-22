@@ -26,7 +26,7 @@
 
 </div>
 
-## ◆ 00  ENGINEERING PROFILE
+## ⟡ 00 — THE BUILDER'S LOG
 
 I'm **Neelesh Malakar**, an AI & Data Science undergraduate who enjoys building practical software and understanding the systems underneath it.
 
@@ -43,7 +43,7 @@ My interests sit at the intersection of **backend engineering, distributed syste
   <strong>My engineering principle:</strong> Don't just make it work. Understand why it works, where it breaks, and what it takes to make it dependable.
 </blockquote>
 
-## ◈ 01  FLAGSHIP BUILD
+## ◉ 01 — THE CORE SYSTEM
 
 <div align="center">
 
@@ -86,11 +86,11 @@ My interests sit at the intersection of **backend engineering, distributed syste
 
 </div>
 
-## ▰ 02  SELECTED BUILDS
+## ⌘ 02 — PROJECT FIELDNOTES
 
 A selection of individual and collaborative work. Team projects are labelled as collaborative; repository ownership does not imply sole authorship.
 
-### Individual projects
+### ↳ 01 / INDEPENDENT BUILDS
 
 <table>
 <tr>
@@ -119,7 +119,7 @@ A music discovery and playback web app with search, queue and playlist workflows
 </tr>
 </table>
 
-### Collaborative projects
+### ↳ 02 / TEAM-ENGINEERED BUILDS
 
 <sub>Built with Raunak and other teammates. Contributions are collaborative, not presented as solo projects.</sub>
 
@@ -198,7 +198,7 @@ A collaborative project. The repository is private, so implementation details ar
 </tr>
 </table>
 
-## ⬡ 03  ENGINEERING TOOLKIT
+## ⬡ 03 — THE ENGINEERING TOOLCHAIN
 
 <div align="center">
 
@@ -246,7 +246,7 @@ A collaborative project. The repository is private, so implementation details ar
 
 </div>
 
-## ◉ 04  GITHUB SIGNAL
+## ▤ 04 — CONTRIBUTION TELEMETRY
 
 <div align="center">
 
@@ -259,7 +259,7 @@ A collaborative project. The repository is private, so implementation details ar
 
 </div>
 
-## ✦ 05  FIND ME AROUND THE WEB
+## ⌁ 05 — OPEN CHANNELS
 
 <div align="center">
 
