@@ -9,16 +9,16 @@
 **Think clearly. Build deliberately. Keep iterating.**
 
 <p>
-  <a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GITHUB-BlaZe08--Dev-00FF88?style=flat-square&logo=github&logoColor=black" alt="GitHub" /></a>
-  <img src="https://komarev.com/ghpvc/?username=BlaZe08-Dev&style=flat-square&color=00FF88&label=PROFILE+VIEWS" alt="Profile views" />
-  <a href="https://github.com/BlaZe08-Dev/MiniCloud"><img src="https://img.shields.io/badge/FLAGSHIP-MINICLOUD-00FF88?style=flat-square&logo=go&logoColor=black" alt="Flagship project MiniCloud" /></a>
+  <a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GITHUB-BlaZe08--Dev-8DA697?style=flat-square&logo=github&logoColor=black" alt="GitHub" /></a>
+  <img src="https://komarev.com/ghpvc/?username=BlaZe08-Dev&style=flat-square&color=8DA697&label=PROFILE+VIEWS" alt="Profile views" />
+  <a href="https://github.com/BlaZe08-Dev/MiniCloud"><img src="https://img.shields.io/badge/FLAGSHIP-MINICLOUD-8DA697?style=flat-square&logo=go&logoColor=black" alt="Flagship project MiniCloud" /></a>
 </p>
 
 <code>AI & DATA SCIENCE</code> &nbsp;·&nbsp; <code>SOFTWARE ENGINEERING</code> &nbsp;·&nbsp; <code>DISTRIBUTED SYSTEMS</code>
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:050505,50:00FF88,100:050505&height=2&section=header" width="100%" alt="" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:070708,50:8DA697,100:070708&height=2&section=header" width="100%" alt="" />
 
 </div>
 
@@ -44,10 +44,10 @@ My interests sit at the intersection of **backend engineering, distributed syste
 <div align="center">
 
 <a href="https://github.com/BlaZe08-Dev/MiniCloud">
-  <img src="https://img.shields.io/badge/PROJECT-MINICLOUD-00FF88?style=for-the-badge&logo=go&logoColor=black" alt="MiniCloud" />
+  <img src="https://img.shields.io/badge/PROJECT-MINICLOUD-8DA697?style=for-the-badge&logo=go&logoColor=black" alt="MiniCloud" />
 </a>
 &nbsp;
-<img src="https://img.shields.io/badge/RELEASE-v1.1.0-111111?style=for-the-badge&logo=github&logoColor=00FF88" alt="Version 1.1.0" />
+<img src="https://img.shields.io/badge/RELEASE-v1.1.0-151514?style=for-the-badge&logo=github&logoColor=8DA697" alt="Version 1.1.0" />
 &nbsp;
 <img src="https://img.shields.io/badge/STATUS-LEARNING%20%2F%20PRE--PRODUCTION-111111?style=for-the-badge" alt="Learning and pre-production status" />
 
@@ -78,13 +78,19 @@ My interests sit at the intersection of **backend engineering, distributed syste
 
 <div align="center">
 
-[![Explore MiniCloud](https://img.shields.io/badge/EXPLORE%20REPOSITORY-00FF88?style=for-the-badge&logo=github&logoColor=black)](https://github.com/BlaZe08-Dev/MiniCloud)
+[![Explore MiniCloud](https://img.shields.io/badge/EXPLORE%20REPOSITORY-ED3426?style=for-the-badge&logo=github&logoColor=black)](https://github.com/BlaZe08-Dev/MiniCloud)
 
 </div>
 
 ## ⌘ 02 — PROJECT FIELDNOTES
 
 A selection of individual and collaborative work. Team projects are labelled as collaborative; repository ownership does not imply sole authorship.
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-dashboard.svg" width="100%" alt="Animated portfolio dashboard highlighting MiniCloud, Harmoniq and collaborative engineering projects" />
+
+</div>
 
 ### ↳ 01 / INDEPENDENT BUILDS
 
@@ -260,12 +266,12 @@ A collaborative project. The repository is private, so implementation details ar
 
 <div align="center">
 
-<a href="mailto:neeleshmalakar@gmail.com"><img src="https://img.shields.io/badge/EMAIL-00FF88?style=for-the-badge&logo=gmail&logoColor=black" alt="Email Neelesh" /></a>
-<a href="https://www.linkedin.com/in/neeleshmalakar/"><img src="https://img.shields.io/badge/LINKEDIN-00FF88?style=for-the-badge&logo=linkedin&logoColor=black" alt="LinkedIn" /></a>
-<a href="https://www.instagram.com/neels_archive/"><img src="https://img.shields.io/badge/INSTAGRAM-00FF88?style=for-the-badge&logo=instagram&logoColor=black" alt="Instagram" /></a>
-<a href="https://medium.com/@Neelesh08"><img src="https://img.shields.io/badge/MEDIUM-00FF88?style=for-the-badge&logo=medium&logoColor=black" alt="Medium" /></a>
-<a href="https://www.credly.com/users/neelesh-malakar"><img src="https://img.shields.io/badge/CREDLY-00FF88?style=for-the-badge&logo=credly&logoColor=black" alt="Credly" /></a>
-<a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GITHUB-00FF88?style=for-the-badge&logo=github&logoColor=black" alt="GitHub" /></a>
+<a href="mailto:neeleshmalakar@gmail.com"><img src="https://img.shields.io/badge/EMAIL-8DA697?style=for-the-badge&logo=gmail&logoColor=black" alt="Email Neelesh" /></a>
+<a href="https://www.linkedin.com/in/neeleshmalakar/"><img src="https://img.shields.io/badge/LINKEDIN-ED3426?style=for-the-badge&logo=linkedin&logoColor=black" alt="LinkedIn" /></a>
+<a href="https://www.instagram.com/neels_archive/"><img src="https://img.shields.io/badge/INSTAGRAM-8DA697?style=for-the-badge&logo=instagram&logoColor=black" alt="Instagram" /></a>
+<a href="https://medium.com/@Neelesh08"><img src="https://img.shields.io/badge/MEDIUM-ED3426?style=for-the-badge&logo=medium&logoColor=black" alt="Medium" /></a>
+<a href="https://www.credly.com/users/neelesh-malakar"><img src="https://img.shields.io/badge/CREDLY-8DA697?style=for-the-badge&logo=credly&logoColor=black" alt="Credly" /></a>
+<a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GITHUB-ED3426?style=for-the-badge&logo=github&logoColor=black" alt="GitHub" /></a>
 
 <br/><br/>
 
@@ -275,7 +281,7 @@ $ echo "Keep building. Keep questioning. Keep engineering."
 
 <strong><code>[ SYSTEM STATUS: ALWAYS BUILDING ]</code></strong>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF88,50:003B25,100:050505&height=110&section=footer" width="100%" alt="" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ED3426,50:4E4D44,100:070708&height=110&section=footer" width="100%" alt="" />
 
 </div>
 
