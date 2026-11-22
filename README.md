@@ -160,6 +160,9 @@ Built in collaboration with Raunak and other teammates.
 <a href="https://medium.com/@Neelesh08">
 <img src="https://img.shields.io/badge/MEDIUM-00FF88?style=for-the-badge&logo=medium&logoColor=black" alt="Medium" />
 </a>
+<a href="https://www.credly.com/users/neelesh-malakar">
+<img src="https://img.shields.io/badge/CREDLY-00FF88?style=for-the-badge&logo=credly&logoColor=black" alt="Credly" />
+</a>
 <a href="https://www.linkedin.com/in/neeleshmalakar/">
 <img src="https://img.shields.io/badge/LINKEDIN-00FF88?style=for-the-badge&logo=linkedin&logoColor=black" alt="LinkedIn" />
 </a>
