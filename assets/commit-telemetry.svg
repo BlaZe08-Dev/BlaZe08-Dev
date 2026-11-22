@@ -1,21 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="230" viewBox="0 0 1000 230" role="img" aria-labelledby="t d">
-<title id="t">878 all-time GitHub commits</title><desc id="d">Animated neon commit counter showing 878 all-time commits.</desc>
+<title id="t">878 all-time GitHub commits</title>
+<desc id="d">Animated all-time commit counter styled to match the dark, sage, warm-neutral and red portfolio dashboard.</desc>
 <defs>
-<linearGradient id="b" x2="1" y2="1"><stop stop-color="#030806"/><stop offset=".6" stop-color="#092015"/><stop offset="1" stop-color="#020604"/></linearGradient>
-<linearGradient id="n"><stop stop-color="#eafff3"/><stop offset=".5" stop-color="#00ff88"/><stop offset="1" stop-color="#8affc2"/></linearGradient>
-<pattern id="g" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#174a31" stroke-width=".7"/></pattern>
-<filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5" result="x"/><feMerge><feMergeNode in="x"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-<linearGradient id="scan"><stop stop-color="#00ff88" stop-opacity="0"/><stop offset=".5" stop-color="#00ff88" stop-opacity=".4"/><stop offset="1" stop-color="#00ff88" stop-opacity="0"/></linearGradient>
+  <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10100f"/><stop offset=".58" stop-color="#151514"/><stop offset="1" stop-color="#070708"/></linearGradient>
+  <linearGradient id="n" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fafaf9"/><stop offset=".52" stop-color="#8da697"/><stop offset="1" stop-color="#eda231"/></linearGradient>
+  <pattern id="g" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#302f2b" stroke-width=".7"/></pattern>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="x"/><feMerge><feMergeNode in="x"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <linearGradient id="scan"><stop stop-color="#8da697" stop-opacity="0"/><stop offset=".5" stop-color="#8da697" stop-opacity=".28"/><stop offset="1" stop-color="#8da697" stop-opacity="0"/></linearGradient>
 </defs>
-<rect width="1000" height="230" rx="18" fill="url(#b)"/><rect width="1000" height="230" rx="18" fill="url(#g)"/>
-<rect x="1" y="1" width="998" height="228" rx="17" fill="none" stroke="#1b7046"/>
-<text x="42" y="34" font-family="monospace" font-size="11" letter-spacing="2.5" fill="#7ca991">CONTRIBUTION TELEMETRY / ALL-TIME TOTAL</text>
-<circle cx="958" cy="30" r="4" fill="#00ff88" filter="url(#glow)"><animate attributeName="opacity" values="1;.2;1" dur="1.5s" repeatCount="indefinite"/></circle>
-<text x="48" y="91" font-family="monospace" font-size="14" letter-spacing="2.5" fill="#c4f5d7">TOTAL COMMITS</text>
-<text x="42" y="178" font-family="monospace" font-size="100" font-weight="800" letter-spacing="-7" fill="url(#n)" filter="url(#glow)">878</text>
-<text x="54" y="202" font-family="monospace" font-size="10" letter-spacing="2" fill="#78aa8c">ACROSS ALL YEARS</text>
-<g transform="translate(650 118)"><circle r="73" fill="none" stroke="#12452c" stroke-width="8"/><circle r="73" fill="none" stroke="#00ff88" stroke-width="3" stroke-dasharray="92 367" stroke-linecap="round" filter="url(#glow)"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/></circle><circle r="52" fill="none" stroke="#17613c" stroke-dasharray="2 7"/><path d="M-28 0h17l10 -18 12 36 12 -26 10 8h18" fill="none" stroke="#00ff88" stroke-width="2.5" filter="url(#glow)" stroke-dasharray="2 8"><animate attributeName="stroke-dashoffset" values="0;-40" dur="1.8s" repeatCount="indefinite"/></path><circle r="5" fill="#00ff88" filter="url(#glow)"><animate attributeName="r" values="3;7;3" dur="2s" repeatCount="indefinite"/></circle></g>
-<g transform="translate(770 115)"><path d="M0 0h35l12 -18 12 34 14 -27 14 11h25l12 -8 12 16 14 -22 14 14h42" fill="none" stroke="#16804d" stroke-width="2"/><path d="M0 0h35l12 -18 12 34 14 -27 14 11h25l12 -8 12 16 14 -22 14 14h42" fill="none" stroke="#00ff88" stroke-width="2.5" stroke-dasharray="2 12" filter="url(#glow)"><animate attributeName="stroke-dashoffset" values="0;-60" dur="2.4s" repeatCount="indefinite"/></path></g>
-<rect x="-120" y="50" width="80" height="140" fill="url(#scan)" opacity=".25" transform="skewX(-18)"><animate attributeName="x" values="-150;1100" dur="6s" repeatCount="indefinite"/></rect>
-<path d="M42 216H958" stroke="#164b31"/><path d="M42 216H958" stroke="#00ff88" stroke-width="2"><animate attributeName="stroke-dasharray" values="10 906;906 10;10 906" dur="4s" repeatCount="indefinite"/></path>
+<rect width="1000" height="230" rx="18" fill="url(#b)"/>
+<rect width="1000" height="230" rx="18" fill="url(#g)"/>
+<rect x="1" y="1" width="998" height="228" rx="17" fill="none" stroke="#4e4d44"/>
+<text x="42" y="34" font-family="monospace" font-size="11" letter-spacing="2.5" fill="#8da697">CONTRIBUTION TELEMETRY / ALL-TIME TOTAL</text>
+<circle cx="958" cy="30" r="4" fill="#ed3426" filter="url(#glow)"><animate attributeName="opacity" values="1;.25;1" dur="1.8s" repeatCount="indefinite"/></circle>
+<text x="48" y="91" font-family="monospace" font-size="14" letter-spacing="2.5" fill="#c6c4ba">TOTAL COMMITS</text>
+<text x="42" y="178" font-family="Inter,Arial,sans-serif" font-size="100" font-weight="800" letter-spacing="-7" fill="url(#n)">878</text>
+<text x="54" y="202" font-family="monospace" font-size="10" letter-spacing="2" fill="#aaa99f">ACROSS ALL YEARS</text>
+<g transform="translate(650 118)">
+  <circle r="73" fill="none" stroke="#302f2b" stroke-width="8"/>
+  <circle r="73" fill="none" stroke="#8da697" stroke-width="3" stroke-dasharray="92 367" stroke-linecap="round" filter="url(#glow)"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="11s" repeatCount="indefinite"/></circle>
+  <circle r="52" fill="none" stroke="#4e4d44" stroke-dasharray="2 7"/>
+  <path d="M-28 0h17l10 -18 12 36 12 -26 10 8h18" fill="none" stroke="#ed3426" stroke-width="2.5" stroke-linecap="round" filter="url(#glow)" stroke-dasharray="2 8"><animate attributeName="stroke-dashoffset" values="0;-40" dur="2s" repeatCount="indefinite"/></path>
+  <circle r="5" fill="#eda231" filter="url(#glow)"><animate attributeName="r" values="3;6;3" dur="2.2s" repeatCount="indefinite"/></circle>
+</g>
+<g transform="translate(770 115)">
+  <path d="M0 0h35l12 -18 12 34 14 -27 14 11h25l12 -8 12 16 14 -22 14 14h42" fill="none" stroke="#4e4d44" stroke-width="2"/>
+  <path d="M0 0h35l12 -18 12 34 14 -27 14 11h25l12 -8 12 16 14 -22 14 14h42" fill="none" stroke="#eda231" stroke-width="2.5" stroke-dasharray="2 12" filter="url(#glow)"><animate attributeName="stroke-dashoffset" values="0;-60" dur="2.8s" repeatCount="indefinite"/></path>
+</g>
+<rect x="-120" y="50" width="80" height="140" fill="url(#scan)" opacity=".45" transform="skewX(-18)"><animate attributeName="x" values="-150;1100" dur="7s" repeatCount="indefinite"/></rect>
+<path d="M42 216H958" stroke="#4e4d44"/>
+<path d="M42 216H958" stroke="#ed3426" stroke-width="2"><animate attributeName="stroke-dasharray" values="10 906;906 10;10 906" dur="4.5s" repeatCount="indefinite"/></path>
 </svg>
