@@ -1,99 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
-<title id="title">MiniCloud animated architecture</title>
-<desc id="desc">A client submits a job to the coordinator. The coordinator dispatches work to two independent workers, receives heartbeats and execution results, and persists durable state in PostgreSQL. Animated packets illustrate the flows.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="t d">
+<title id="t">MiniCloud — animated execution dashboard</title><desc id="d">Current MiniCloud v1.1.0 architecture displayed as a dark operations dashboard with animated job flow, worker heartbeats, durable storage and system status indicators.</desc>
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050b09"/><stop offset="1" stop-color="#071a12"/></linearGradient>
-  <linearGradient id="node" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10271d"/><stop offset="1" stop-color="#09150f"/></linearGradient>
-  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#00ff88" stroke-width="1.2"/></marker>
-  <style>
-    .heading{font:700 16px 'JetBrains Mono',monospace;letter-spacing:2px;fill:#eafff3}
-    .sub{font:11px 'JetBrains Mono',monospace;letter-spacing:1px;fill:#7ca991}
-    .nodeTitle{font:700 17px 'JetBrains Mono',monospace;fill:#eafff3}
-    .nodeSub{font:11px 'JetBrains Mono',monospace;fill:#9ab8a7}
-    .tiny{font:10px 'JetBrains Mono',monospace;fill:#7ca991;letter-spacing:.7px}
-    .edge{fill:none;stroke:#28694b;stroke-width:2;stroke-dasharray:7 8;opacity:.9}
-    .edgeSolid{fill:none;stroke:#00a95b;stroke-width:2;opacity:.85;marker-end:url(#arrow)}
-    .packet{fill:#00ff88;filter:url(#glow)}
-    .heartbeat{fill:#9dffcb;filter:url(#glow)}
-    .node{fill:url(#node);stroke:#1d7049;stroke-width:1.5}
-    .accent{fill:#00ff88}
-  </style>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10100f"/><stop offset="1" stop-color="#070708"/></linearGradient><linearGradient id="sage" x2="1" y2="1"><stop stop-color="#8da697"/><stop offset="1" stop-color="#526d5d"/></linearGradient>
+ <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#302f2b" stroke-width=".6"/></pattern>
+ <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <style>.mono{font-family:Consolas,monospace}.ui{font-family:Inter,Arial,sans-serif}.muted{fill:#aaa99f}.white{fill:#fafaf9}.tiny{font-size:10px;letter-spacing:1.1px}.card{fill:#151514;stroke:#4e4d44}.line{fill:none;stroke:#8da697;stroke-width:2;stroke-dasharray:6 8}.packet{fill:#eda231;filter:url(#glow)}.pulse{animation:pulse 1.7s ease-in-out infinite}.float{animation:float 4.5s ease-in-out infinite}@keyframes pulse{50%{opacity:.25}}@keyframes float{50%{transform:translateY(-3px)}}@media(prefers-reduced-motion:reduce){.pulse,.float{animation:none}}</style>
 </defs>
-<rect width="1000" height="620" rx="22" fill="url(#bg)"/>
-<rect x="1" y="1" width="998" height="618" rx="21" fill="none" stroke="#17432f"/>
-<path d="M28 76H972" stroke="#17432f"/>
-<text x="42" y="42" class="heading">MINICLOUD / EXECUTION TOPOLOGY</text>
-<text x="958" y="42" class="tiny" text-anchor="end">V1.1.0 · CURRENT IMPLEMENTATION</text>
-<circle cx="44" cy="101" r="4" fill="#00ff88"><animate attributeName="opacity" values=".35;1;.35" dur="1.8s" repeatCount="indefinite"/></circle>
-<text x="58" y="105" class="tiny">LIVE FLOW — ILLUSTRATIVE PACKET ANIMATION</text>
-
+<rect width="1000" height="650" rx="22" fill="url(#bg)"/><rect width="1000" height="650" rx="22" fill="url(#grid)" opacity=".5"/><rect x="1" y="1" width="998" height="648" rx="21" fill="none" stroke="#4e4d44"/>
+<rect x="18" y="18" width="964" height="614" rx="16" fill="#0c0c0b" stroke="#383731"/><path d="M18 70H982" stroke="#383731"/>
+<circle cx="45" cy="44" r="5" fill="#ed3426"/><circle cx="63" cy="44" r="5" fill="#eda231"/><circle cx="81" cy="44" r="5" fill="#8da697"/>
+<text x="104" y="48" class="mono tiny white">MINICLOUD / SYSTEM MAP</text><text x="956" y="48" class="mono tiny muted" text-anchor="end">V1.1.0 · CURRENT IMPLEMENTATION</text>
+<!-- status strip -->
+<rect x="40" y="88" width="920" height="48" rx="9" fill="#171715" stroke="#383731"/>
+<circle cx="62" cy="112" r="4" fill="#8da697" class="pulse"/><text x="76" y="116" class="mono tiny white">COORDINATOR</text><text x="200" y="116" class="mono tiny muted">JOB ROUTING</text><circle cx="335" cy="112" r="3" fill="#ed3426"/><text x="348" y="116" class="mono tiny muted">LEASED ATTEMPTS</text><circle cx="510" cy="112" r="3" fill="#eda231"/><text x="523" y="116" class="mono tiny muted">WORKER HEARTBEATS</text><circle cx="715" cy="112" r="3" fill="#8da697"/><text x="728" y="116" class="mono tiny muted">POSTGRESQL STATE</text>
 <!-- client -->
-<rect x="355" y="118" width="290" height="72" rx="12" class="node"/>
-<rect x="355" y="118" width="5" height="72" rx="2" fill="#00ff88"/>
-<text x="500" y="148" class="nodeTitle" text-anchor="middle">CLI / CLIENT</text>
-<text x="500" y="169" class="nodeSub" text-anchor="middle">Submit job · inspect status</text>
-
+<g class="float"><rect x="350" y="164" width="300" height="76" rx="12" class="card"/><rect x="350" y="164" width="5" height="76" rx="2" fill="#8da697"/><text x="500" y="194" text-anchor="middle" class="ui white" font-size="18" font-weight="800">CLI / CLIENT</text><text x="500" y="216" text-anchor="middle" class="mono tiny muted">SUBMIT JOB · INSPECT STATUS</text></g>
+<path d="M500 240V285" class="line"/><circle r="5" class="packet"><animateMotion dur="1.7s" repeatCount="indefinite" path="M500 240V280"/></circle><text x="516" y="265" class="mono tiny muted">JOB REQUEST</text>
 <!-- coordinator -->
-<rect x="335" y="270" width="330" height="112" rx="14" class="node"/>
-<rect x="335" y="270" width="6" height="112" rx="3" fill="#00ff88"/>
-<text x="500" y="309" class="nodeTitle" text-anchor="middle">COORDINATOR</text>
-<text x="500" y="333" class="nodeSub" text-anchor="middle">HTTP API · scheduler · attempt leases</text>
-<text x="500" y="356" class="tiny" text-anchor="middle">JOB STATE + WORKER REGISTRY</text>
-<rect x="326" y="261" width="348" height="130" rx="19" fill="none" stroke="#00ff88" opacity=".35">
- <animate attributeName="opacity" values=".12;.48;.12" dur="3.4s" repeatCount="indefinite"/>
-</rect>
-
-<!-- database -->
-<rect x="770" y="286" width="180" height="82" rx="12" class="node"/>
-<ellipse cx="860" cy="300" rx="54" ry="9" fill="#123b29" stroke="#00a95b"/>
-<path d="M806 300v54c0 12 108 12 108 0v-54" fill="none" stroke="#1d7049" stroke-width="1.5"/>
-<path d="M806 327c0 12 108 12 108 0" fill="none" stroke="#1d7049"/>
-<text x="860" y="337" class="nodeTitle" font-size="14" text-anchor="middle">POSTGRESQL</text>
-<text x="860" y="386" class="tiny" text-anchor="middle">DURABLE SOURCE OF TRUTH</text>
-
+<rect x="300" y="285" width="400" height="130" rx="14" fill="#202d25" stroke="#8da697" stroke-width="1.5"/><rect x="300" y="285" width="7" height="130" rx="3" fill="url(#sage)"/>
+<text x="500" y="326" text-anchor="middle" class="ui white" font-size="23" font-weight="800">COORDINATOR</text><text x="500" y="350" text-anchor="middle" class="mono tiny" fill="#c9d8cc">HTTP API · SCHEDULER · ATTEMPT LEASES</text>
+<rect x="335" y="369" width="96" height="25" rx="6" fill="#151514" stroke="#526b59"/><text x="383" y="385" text-anchor="middle" class="mono" font-size="8" fill="#c9d8cc">JOB STATE</text><rect x="452" y="369" width="96" height="25" rx="6" fill="#151514" stroke="#526b59"/><text x="500" y="385" text-anchor="middle" class="mono" font-size="8" fill="#c9d8cc">DISPATCH</text><rect x="569" y="369" width="96" height="25" rx="6" fill="#151514" stroke="#526b59"/><text x="617" y="385" text-anchor="middle" class="mono" font-size="8" fill="#c9d8cc">REGISTRY</text>
+<!-- DB -->
+<path d="M700 346H778" class="line"/><circle r="4" class="packet"><animateMotion dur="1.8s" repeatCount="indefinite" path="M700 346H773"/></circle>
+<rect x="778" y="298" width="160" height="96" rx="12" class="card"/><ellipse cx="858" cy="316" rx="48" ry="9" fill="#26352b" stroke="#8da697"/><path d="M810 316v53c0 12 96 12 96 0v-53M810 342c0 12 96 12 96 0" fill="none" stroke="#8da697"/><text x="858" y="356" text-anchor="middle" class="ui white" font-size="13" font-weight="700">POSTGRESQL</text><text x="858" y="414" text-anchor="middle" class="mono" font-size="8" fill="#aaa99f">DURABLE STATE</text><text x="739" y="332" class="mono" font-size="8" fill="#aaa99f">PERSIST</text>
 <!-- workers -->
-<rect x="90" y="475" width="300" height="100" rx="13" class="node"/>
-<rect x="90" y="475" width="5" height="100" rx="2" fill="#00c96b"/>
-<text x="240" y="512" class="nodeTitle" text-anchor="middle">WORKER A</text>
-<text x="240" y="535" class="nodeSub" text-anchor="middle">Pull · execute · report</text>
-<text x="240" y="555" class="tiny" text-anchor="middle">BOUNDED CONCURRENCY</text>
-
-<rect x="610" y="475" width="300" height="100" rx="13" class="node"/>
-<rect x="610" y="475" width="5" height="100" rx="2" fill="#00c96b"/>
-<text x="760" y="512" class="nodeTitle" text-anchor="middle">WORKER B</text>
-<text x="760" y="535" class="nodeSub" text-anchor="middle">Pull · execute · report</text>
-<text x="760" y="555" class="tiny" text-anchor="middle">BOUNDED CONCURRENCY</text>
-
-<!-- client request -->
-<path d="M500 190V270" class="edgeSolid"/>
-<circle r="4" class="packet"><animateMotion dur="1.7s" repeatCount="indefinite" path="M500 190 L500 265"/></circle>
-<text x="515" y="232" class="tiny">JOB REQUEST</text>
-
-<!-- coordinator to workers dispatch -->
-<path d="M410 382 C360 425 270 425 240 475" class="edge" />
-<path d="M590 382 C640 425 730 425 760 475" class="edge"/>
-<circle r="4.5" class="packet"><animateMotion dur="2.3s" repeatCount="indefinite" path="M410 382 C360 425 270 425 240 475"/></circle>
-<circle r="4.5" class="packet"><animateMotion dur="2.8s" begin=".7s" repeatCount="indefinite" path="M590 382 C640 425 730 425 760 475"/></circle>
-<text x="305" y="435" class="tiny" text-anchor="middle">DISPATCH / PULL</text>
-<text x="695" y="435" class="tiny" text-anchor="middle">DISPATCH / PULL</text>
-
-<!-- heartbeat / result return -->
-<path d="M260 475 C290 445 390 445 445 382" class="edge"/>
-<path d="M740 475 C710 445 610 445 555 382" class="edge"/>
-<circle r="3.5" class="heartbeat"><animateMotion dur="3.1s" repeatCount="indefinite" path="M260 475 C290 445 390 445 445 382"/></circle>
-<circle r="3.5" class="heartbeat"><animateMotion dur="3.4s" begin="1s" repeatCount="indefinite" path="M740 475 C710 445 610 445 555 382"/></circle>
-<text x="500" y="462" class="tiny" text-anchor="middle">HEARTBEATS + EXECUTION RESULTS</text>
-
-<!-- persistence -->
-<path d="M665 326H770" class="edgeSolid"/>
-<circle r="4" class="packet"><animateMotion dur="1.9s" repeatCount="indefinite" path="M665 326 L765 326"/></circle>
-<text x="718" y="312" class="tiny" text-anchor="middle">PERSIST</text>
-<path d="M770 350H665" class="edge" />
-<circle r="3" class="heartbeat"><animateMotion dur="2.6s" begin=".9s" repeatCount="indefinite" path="M770 350 L665 350"/></circle>
-
-<text x="42" y="598" class="tiny">SOLID FLOW: SUBMISSION / PERSISTENCE</text>
-<circle cx="355" cy="594" r="3.5" class="packet"/><text x="366" y="598" class="tiny">DISPATCH</text>
-<circle cx="472" cy="594" r="3.5" class="heartbeat"/><text x="483" y="598" class="tiny">HEARTBEAT / RESULT</text>
-<text x="958" y="598" class="tiny" text-anchor="end">ONE COORDINATOR · INDEPENDENT WORKERS</text>
+<path d="M405 415C370 445 260 445 245 480" class="line"/><path d="M595 415C630 445 740 445 755 480" class="line"/>
+<circle r="4.5" class="packet"><animateMotion dur="2.2s" repeatCount="indefinite" path="M405 415C370 445 260 445 245 480"/></circle><circle r="4.5" class="packet"><animateMotion dur="2.6s" begin=".8s" repeatCount="indefinite" path="M595 415C630 445 740 445 755 480"/></circle>
+<text x="310" y="452" class="mono" font-size="8" fill="#aaa99f">DISPATCH / PULL</text><text x="690" y="452" class="mono" font-size="8" fill="#aaa99f">DISPATCH / PULL</text>
+<g class="float"><rect x="95" y="480" width="300" height="104" rx="13" class="card"/><rect x="95" y="480" width="5" height="104" rx="2" fill="#ed3426"/><text x="245" y="516" text-anchor="middle" class="ui white" font-size="18" font-weight="800">WORKER A</text><text x="245" y="539" text-anchor="middle" class="mono tiny muted">PULL · EXECUTE · REPORT</text><rect x="170" y="553" width="150" height="17" rx="8" fill="#2b1b18"/><text x="245" y="565" text-anchor="middle" class="mono" font-size="8" fill="#ff9b8d">BOUNDED CONCURRENCY</text></g>
+<g class="float"><rect x="605" y="480" width="300" height="104" rx="13" class="card"/><rect x="605" y="480" width="5" height="104" rx="2" fill="#ed3426"/><text x="755" y="516" text-anchor="middle" class="ui white" font-size="18" font-weight="800">WORKER B</text><text x="755" y="539" text-anchor="middle" class="mono tiny muted">PULL · EXECUTE · REPORT</text><rect x="680" y="553" width="150" height="17" rx="8" fill="#2b1b18"/><text x="755" y="565" text-anchor="middle" class="mono" font-size="8" fill="#ff9b8d">BOUNDED CONCURRENCY</text></g>
+<!-- return signals -->
+<path d="M260 480C290 448 390 448 450 415" fill="none" stroke="#eda231" stroke-width="1.7" stroke-dasharray="3 7"/><path d="M740 480C710 448 610 448 550 415" fill="none" stroke="#eda231" stroke-width="1.7" stroke-dasharray="3 7"/>
+<circle r="3.5" fill="#eda231" filter="url(#glow)"><animateMotion dur="3s" repeatCount="indefinite" path="M260 480C290 448 390 448 450 415"/></circle><circle r="3.5" fill="#eda231" filter="url(#glow)"><animateMotion dur="3.4s" begin="1s" repeatCount="indefinite" path="M740 480C710 448 610 448 550 415"/></circle>
+<text x="500" y="469" text-anchor="middle" class="mono tiny muted">HEARTBEATS + EXECUTION RESULTS</text>
+<path d="M40 603H960" stroke="#383731"/><circle cx="54" cy="618" r="3" fill="#8da697"/><text x="66" y="622" class="mono" font-size="8" fill="#aaa99f">SUBMISSION / PERSISTENCE</text><circle cx="260" cy="618" r="3" fill="#eda231"/><text x="272" y="622" class="mono" font-size="8" fill="#aaa99f">DISPATCH / HEARTBEATS / RESULTS</text><text x="956" y="622" text-anchor="end" class="mono" font-size="8" fill="#77766f">ONE COORDINATOR · INDEPENDENT WORKERS</text>
 </svg>
