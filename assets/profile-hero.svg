@@ -1,78 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-<title id="title">Neelesh Malakar — animated engineering profile header</title>
-<desc id="desc">A dark technical interface with animated neon green circuit paths, orbiting nodes, a scanning beam and the name Neelesh Malakar.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">Neelesh Malakar — creative engineering profile</title>
+<desc id="desc">A bold dark editorial dashboard-inspired profile hero with oversized typography, colorful modular tiles, animated data lines and a live build indicator.</desc>
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#030806"/><stop offset=".55" stop-color="#071b12"/><stop offset="1" stop-color="#020604"/></linearGradient>
-  <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#00ff88" stop-opacity="0"/><stop offset=".5" stop-color="#00ff88" stop-opacity=".9"/><stop offset="1" stop-color="#00ff88" stop-opacity="0"/></linearGradient>
-  <linearGradient id="titleGlow" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#d9ffe9"/><stop offset=".55" stop-color="#00ff88"/><stop offset="1" stop-color="#7dffc0"/></linearGradient>
-  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#1a5639" stroke-width=".7" opacity=".42"/></pattern>
-  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
-  <clipPath id="clip"><rect x="1" y="1" width="1198" height="358" rx="20"/></clipPath>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1" fill="#77766f" opacity=".22"/></pattern>
+  <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff513b"/><stop offset="1" stop-color="#d92319"/></linearGradient>
+  <linearGradient id="sage" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b4c9b7"/><stop offset="1" stop-color="#718e7d"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="8"/><feOffset dy="7"/><feComponentTransfer><feFuncA type="linear" slope=".3"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <clipPath id="frame"><rect x="1" y="1" width="1198" height="428" rx="26"/></clipPath>
   <style>
-    .mono{font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace}
-    .micro{font-size:11px;letter-spacing:2px;fill:#78aa8c}
-    .label{font-size:12px;letter-spacing:2.5px;fill:#9bd8b5}
-    .trace{fill:none;stroke:#16784a;stroke-width:1.4;opacity:.75}
-    .moving{fill:none;stroke:#00ff88;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:2 15;filter:url(#glow)}
+    .sans{font-family:Inter,Arial,Helvetica,sans-serif}
+    .mono{font-family:'SFMono-Regular',Consolas,monospace}
+    .tiny{font-size:10px;letter-spacing:1.6px}
+    .float{animation:float 5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .float2{animation:float 6s ease-in-out -2s infinite;transform-box:fill-box;transform-origin:center}
+    .blink{animation:blink 1.8s ease-in-out infinite}
+    .dash{stroke-dasharray:5 9;animation:dash 8s linear infinite}
+    .bar{transform-box:fill-box;transform-origin:bottom;animation:grow 2.4s ease-in-out infinite alternate}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.28}}
+    @keyframes dash{to{stroke-dashoffset:-140}}
+    @keyframes grow{from{transform:scaleY(.45)}to{transform:scaleY(1)}}
+    @media(prefers-reduced-motion:reduce){.float,.float2,.blink,.dash,.bar{animation:none}}
   </style>
 </defs>
-<g clip-path="url(#clip)">
-  <rect width="1200" height="360" fill="url(#bg)"/>
-  <rect width="1200" height="360" fill="url(#grid)" opacity=".68"/>
-  <ellipse cx="980" cy="165" rx="240" ry="150" fill="#00ff88" opacity=".07" filter="url(#soft)"/>
-  <path d="M0 300H1200" stroke="#0d5b37" opacity=".7"/>
-  <path d="M0 303H1200" stroke="#00ff88" opacity=".45"><animate attributeName="opacity" values=".12;.65;.12" dur="3s" repeatCount="indefinite"/></path>
-  <!-- technical frame -->
-  <path d="M30 28h48l12 -12h75M1170 28h-48l-12 -12h-75M30 332h48l12 12h75M1170 332h-48l-12 12h-75" fill="none" stroke="#24784c" stroke-width="1.2"/>
-  <path d="M30 58V28H60M1140 28h30v30M30 302v30h30M1170 302v30h-30" fill="none" stroke="#00ff88" stroke-width="2" opacity=".8"/>
-  <!-- left text -->
-  <text x="76" y="76" class="mono micro">PERSONAL ENGINEERING TERMINAL <tspan fill="#00ff88">/  PROFILE 01</tspan></text>
-  <text x="72" y="166" class="mono" font-size="61" font-weight="800" letter-spacing="-2" fill="url(#titleGlow)">NEELESH MALAKAR</text>
-  <text x="77" y="207" class="mono label">ENGINEERING SYSTEMS THAT DO REAL WORK</text>
-  <rect x="77" y="232" width="355" height="2" rx="1" fill="#164d32"/>
-  <rect x="77" y="232" width="70" height="2" rx="1" fill="#00ff88"><animate attributeName="x" values="77;362;77" dur="5s" repeatCount="indefinite"/></rect>
-  <text x="77" y="266" class="mono" font-size="14" fill="#d9ffe9">AI &amp; DATA SCIENCE <tspan fill="#00ff88">·</tspan> SOFTWARE ENGINEERING</text>
-  <text x="77" y="289" class="mono" font-size="14" fill="#d9ffe9">DISTRIBUTED SYSTEMS <tspan fill="#00ff88">·</tspan> APPLIED AI</text>
-  <!-- right orbital topology -->
-  <g transform="translate(930 174)">
-    <circle r="119" fill="none" stroke="#145333" stroke-width="1" stroke-dasharray="3 8"/>
-    <circle r="91" fill="none" stroke="#1a7044" stroke-width="1.2" stroke-dasharray="42 8 3 8" opacity=".8">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="34s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="64" fill="none" stroke="#1c8c53" stroke-width="1" opacity=".6"/>
-    <circle r="34" fill="#062215" stroke="#00ff88" stroke-width="1.6" filter="url(#glow)"/>
-    <text x="0" y="-3" class="mono" font-size="12" text-anchor="middle" fill="#e5fff0" font-weight="700">BUILD</text>
-    <text x="0" y="12" class="mono" font-size="9" text-anchor="middle" fill="#00ff88">.08</text>
-    <g>
-      <circle cx="0" cy="-119" r="5" fill="#00ff88" filter="url(#glow)"/>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
-    </g>
-    <g>
-      <circle cx="91" cy="0" r="4" fill="#a6ffd0" filter="url(#glow)"/>
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="8s" repeatCount="indefinite"/>
-    </g>
-    <g>
-      <circle cx="-64" cy="0" r="4" fill="#00ff88" filter="url(#glow)"/>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="19s" repeatCount="indefinite"/>
-    </g>
-    <path d="M-119 0H-65M64 0H119M0 -119V-64M0 64V119" class="trace"/>
-    <circle r="12" fill="none" stroke="#00ff88" opacity=".45"><animate attributeName="r" values="10;22;10" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0;.5" dur="2.8s" repeatCount="indefinite"/></circle>
+<g clip-path="url(#frame)">
+  <rect width="1200" height="430" fill="#070708"/>
+  <rect width="1200" height="430" fill="url(#dots)"/>
+  <path d="M0 0H1200V430H0Z" fill="none" stroke="#292927"/>
+  <text x="48" y="43" class="mono tiny" fill="#aaa99f">NEELESH MALAKAR <tspan fill="#ed3426">/</tspan> PERSONAL SPACE</text>
+  <text x="1152" y="43" class="mono tiny" text-anchor="end" fill="#aaa99f">INDEPENDENTLY CURIOUS · ALWAYS IN BETA</text>
+  <path d="M48 59H1152" stroke="#383834"/>
+  <!-- headline -->
+  <text x="58" y="139" class="sans" font-size="23" font-weight="700" fill="#f4f2ec" letter-spacing="-1">HEY, I'M</text>
+  <text x="52" y="225" class="sans" font-size="88" font-weight="900" fill="#f7f5ef" letter-spacing="-5">NEELESH</text>
+  <text x="55" y="305" class="sans" font-size="82" font-weight="900" fill="#f7f5ef" letter-spacing="-5">MALAKAR<span fill="#ed3426">.</span></text>
+  <rect x="58" y="329" width="310" height="39" rx="19.5" fill="#ed3426"/>
+  <text x="213" y="354" class="mono" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">I BUILD THINGS THAT DO THINGS ↗</text>
+  <text x="59" y="397" class="sans" font-size="14" fill="#aaa99f">AI &amp; Data Science student · Software / Systems / Applied AI</text>
+  <!-- top right small status -->
+  <g transform="translate(900 78)">
+    <rect width="252" height="45" rx="12" fill="#151515" stroke="#333330"/>
+    <circle cx="21" cy="22" r="5" fill="#8da697" class="blink"/>
+    <text x="37" y="19" class="mono tiny" fill="#b8c8bb">CURRENTLY BUILDING</text>
+    <text x="37" y="34" class="sans" font-size="13" font-weight="700" fill="#f4f2ec">MINICLOUD <tspan fill="#ed3426">↗</tspan></text>
   </g>
-  <!-- circuit traces and traveling pulses -->
-  <path d="M700 54H790L820 84V112M1040 246H1100L1125 221V190M720 290H810L840 260" class="trace"/>
-  <path d="M700 54H790L820 84V112M1040 246H1100L1125 221V190M720 290H810L840 260" class="moving">
-    <animate attributeName="stroke-dashoffset" values="0;-68" dur="2.5s" repeatCount="indefinite"/>
-  </path>
-  <circle cx="820" cy="112" r="3" fill="#00ff88"><animate attributeName="r" values="2;5;2" dur="1.8s" repeatCount="indefinite"/></circle>
-  <circle cx="1125" cy="190" r="3" fill="#00ff88"><animate attributeName="r" values="2;5;2" dur="2.2s" repeatCount="indefinite"/></circle>
-  <!-- scan sweep -->
-  <rect x="-220" y="0" width="160" height="360" fill="url(#beam)" opacity=".12" transform="skewX(-18)">
-    <animate attributeName="x" values="-240;1320" dur="7s" repeatCount="indefinite"/>
-  </rect>
-  <path d="M0 12H1200" stroke="#00ff88" opacity=".18"/>
-  <text x="1135" y="326" class="mono micro" text-anchor="end">STATUS <tspan fill="#00ff88">● ONLINE / ALWAYS BUILDING</tspan></text>
-  <circle cx="1065" cy="322" r="3" fill="#00ff88" filter="url(#glow)"><animate attributeName="opacity" values="1;.25;1" dur="1.3s" repeatCount="indefinite"/></circle>
+  <!-- modular tiles, dashboard-inspired -->
+  <g filter="url(#shadow)" class="float">
+    <rect x="840" y="151" width="312" height="133" rx="18" fill="url(#sage)"/>
+    <text x="862" y="179" class="mono tiny" fill="#1d3026">01 / SYSTEMS THINKING</text>
+    <text x="862" y="219" class="sans" font-size="27" font-weight="800" fill="#101b15">MAKE IT WORK.</text>
+    <text x="862" y="249" class="sans" font-size="27" font-weight="800" fill="#101b15">KNOW WHY.</text>
+    <path d="M1078 253l17 -18 12 8 24 -33" fill="none" stroke="#1d4934" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1131" cy="210" r="4" fill="#ed3426"/>
+  </g>
+  <g filter="url(#shadow)" class="float2">
+    <rect x="739" y="303" width="195" height="93" rx="16" fill="#ed3426"/>
+    <text x="758" y="328" class="mono tiny" fill="#ffe0d9">02 / CURRENT MODE</text>
+    <text x="758" y="358" class="sans" font-size="22" font-weight="900" fill="#fff">BUILD</text>
+    <text x="758" y="378" class="sans" font-size="22" font-weight="900" fill="#fff">→ REPEAT</text>
+  </g>
+  <g filter="url(#shadow)" class="float">
+    <rect x="951" y="303" width="201" height="93" rx="16" fill="#2f32fe"/>
+    <text x="970" y="328" class="mono tiny" fill="#d9d9ff">03 / TOOLBOX</text>
+    <text x="970" y="357" class="sans" font-size="18" font-weight="800" fill="#fff">GO · PYTHON</text>
+    <text x="970" y="378" class="sans" font-size="18" font-weight="800" fill="#fff">SYSTEMS · AI</text>
+    <circle cx="1124" cy="324" r="5" fill="#eda231" class="blink"/>
+  </g>
+  <!-- tiny data visualization -->
+  <g transform="translate(785 145)">
+    <path d="M0 0H340" stroke="#ffffff" opacity=".08"/>
+    <path d="M0 12H340" stroke="#ffffff" opacity=".08"/>
+  </g>
+  <g transform="translate(765 269)" opacity=".9">
+    <rect x="0" y="0" width="7" height="17" rx="3" fill="#eda231" class="bar"/>
+    <rect x="13" y="5" width="7" height="12" rx="3" fill="#eda231" class="bar" style="animation-delay:-.4s"/>
+    <rect x="26" y="1" width="7" height="16" rx="3" fill="#eda231" class="bar" style="animation-delay:-.8s"/>
+    <rect x="39" y="8" width="7" height="9" rx="3" fill="#eda231" class="bar" style="animation-delay:-1.2s"/>
+  </g>
+  <path d="M48 413H1152" stroke="#383834"/>
+  <text x="48" y="424" class="mono" font-size="8" fill="#77766f" letter-spacing="1.5">DESIGNING · DEBUGGING · DEPLOYING</text>
+  <text x="1152" y="424" class="mono" font-size="8" fill="#77766f" text-anchor="end" letter-spacing="1.5">EST. IN CURIOSITY / BUILT WITH INTENT</text>
 </g>
-<rect x="1" y="1" width="1198" height="358" rx="20" fill="none" stroke="#1b6842" stroke-width="1.4"/>
+<rect x="1" y="1" width="1198" height="428" rx="26" fill="none" stroke="#373633" stroke-width="1.5"/>
 </svg>
