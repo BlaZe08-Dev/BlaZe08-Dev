@@ -2,11 +2,7 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,45:062D20,100:00FF88&height=220&section=header&text=NEELESH%20MALAKAR&fontSize=46&fontColor=00FF88&fontAlignY=38&desc=ENGINEERING%20SYSTEMS%20THAT%20DO%20REAL%20WORK&descSize=13&descAlignY=61&animation=fadeIn" width="100%" alt="Neelesh Malakar — Engineering systems that do real work" />
-
-<a href="https://readme-typing-svg.demolab.com">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&duration=3200&pause=1000&color=00FF88&center=true&vCenter=true&width=720&lines=AI+%26+Data+Science+Undergraduate;Software+Developer;Distributed+Systems+Enthusiast;Learning+by+building+real+software." alt="AI and Data Science undergraduate, software developer, distributed systems enthusiast" />
-</a>
+<img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/profile-hero.svg" width="100%" alt="Animated engineering terminal header for Neelesh Malakar, with orbiting system nodes, circuit pulses and scanning beam" />
 
 <br/>
 
