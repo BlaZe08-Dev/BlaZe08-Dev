@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+<title id="title">MiniCloud animated architecture</title>
+<desc id="desc">A client submits a job to the coordinator. The coordinator dispatches work to two independent workers, receives heartbeats and execution results, and persists durable state in PostgreSQL. Animated packets illustrate the flows.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050b09"/><stop offset="1" stop-color="#071a12"/></linearGradient>
+  <linearGradient id="node" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10271d"/><stop offset="1" stop-color="#09150f"/></linearGradient>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#00ff88" stroke-width="1.2"/></marker>
+  <style>
+    .heading{font:700 16px 'JetBrains Mono',monospace;letter-spacing:2px;fill:#eafff3}
+    .sub{font:11px 'JetBrains Mono',monospace;letter-spacing:1px;fill:#7ca991}
+    .nodeTitle{font:700 17px 'JetBrains Mono',monospace;fill:#eafff3}
+    .nodeSub{font:11px 'JetBrains Mono',monospace;fill:#9ab8a7}
+    .tiny{font:10px 'JetBrains Mono',monospace;fill:#7ca991;letter-spacing:.7px}
+    .edge{fill:none;stroke:#28694b;stroke-width:2;stroke-dasharray:7 8;opacity:.9}
+    .edgeSolid{fill:none;stroke:#00a95b;stroke-width:2;opacity:.85;marker-end:url(#arrow)}
+    .packet{fill:#00ff88;filter:url(#glow)}
+    .heartbeat{fill:#9dffcb;filter:url(#glow)}
+    .node{fill:url(#node);stroke:#1d7049;stroke-width:1.5}
+    .accent{fill:#00ff88}
+  </style>
+</defs>
+<rect width="1000" height="620" rx="22" fill="url(#bg)"/>
+<rect x="1" y="1" width="998" height="618" rx="21" fill="none" stroke="#17432f"/>
+<path d="M28 76H972" stroke="#17432f"/>
+<text x="42" y="42" class="heading">MINICLOUD / EXECUTION TOPOLOGY</text>
+<text x="958" y="42" class="tiny" text-anchor="end">V1.1.0 · CURRENT IMPLEMENTATION</text>
+<circle cx="44" cy="101" r="4" fill="#00ff88"><animate attributeName="opacity" values=".35;1;.35" dur="1.8s" repeatCount="indefinite"/></circle>
+<text x="58" y="105" class="tiny">LIVE FLOW — ILLUSTRATIVE PACKET ANIMATION</text>
+
+<!-- client -->
+<rect x="355" y="118" width="290" height="72" rx="12" class="node"/>
+<rect x="355" y="118" width="5" height="72" rx="2" fill="#00ff88"/>
+<text x="500" y="148" class="nodeTitle" text-anchor="middle">CLI / CLIENT</text>
+<text x="500" y="169" class="nodeSub" text-anchor="middle">Submit job · inspect status</text>
+
+<!-- coordinator -->
+<rect x="335" y="270" width="330" height="112" rx="14" class="node"/>
+<rect x="335" y="270" width="6" height="112" rx="3" fill="#00ff88"/>
+<text x="500" y="309" class="nodeTitle" text-anchor="middle">COORDINATOR</text>
+<text x="500" y="333" class="nodeSub" text-anchor="middle">HTTP API · scheduler · attempt leases</text>
+<text x="500" y="356" class="tiny" text-anchor="middle">JOB STATE + WORKER REGISTRY</text>
+<rect x="326" y="261" width="348" height="130" rx="19" fill="none" stroke="#00ff88" opacity=".35">
+ <animate attributeName="opacity" values=".12;.48;.12" dur="3.4s" repeatCount="indefinite"/>
+</rect>
+
+<!-- database -->
+<rect x="770" y="286" width="180" height="82" rx="12" class="node"/>
+<ellipse cx="860" cy="300" rx="54" ry="9" fill="#123b29" stroke="#00a95b"/>
+<path d="M806 300v54c0 12 108 12 108 0v-54" fill="none" stroke="#1d7049" stroke-width="1.5"/>
+<path d="M806 327c0 12 108 12 108 0" fill="none" stroke="#1d7049"/>
+<text x="860" y="337" class="nodeTitle" font-size="14" text-anchor="middle">POSTGRESQL</text>
+<text x="860" y="386" class="tiny" text-anchor="middle">DURABLE SOURCE OF TRUTH</text>
+
+<!-- workers -->
+<rect x="90" y="475" width="300" height="100" rx="13" class="node"/>
+<rect x="90" y="475" width="5" height="100" rx="2" fill="#00c96b"/>
+<text x="240" y="512" class="nodeTitle" text-anchor="middle">WORKER A</text>
+<text x="240" y="535" class="nodeSub" text-anchor="middle">Pull · execute · report</text>
+<text x="240" y="555" class="tiny" text-anchor="middle">BOUNDED CONCURRENCY</text>
+
+<rect x="610" y="475" width="300" height="100" rx="13" class="node"/>
+<rect x="610" y="475" width="5" height="100" rx="2" fill="#00c96b"/>
+<text x="760" y="512" class="nodeTitle" text-anchor="middle">WORKER B</text>
+<text x="760" y="535" class="nodeSub" text-anchor="middle">Pull · execute · report</text>
+<text x="760" y="555" class="tiny" text-anchor="middle">BOUNDED CONCURRENCY</text>
+
+<!-- client request -->
+<path d="M500 190V270" class="edgeSolid"/>
+<circle r="4" class="packet"><animateMotion dur="1.7s" repeatCount="indefinite" path="M500 190 L500 265"/></circle>
+<text x="515" y="232" class="tiny">JOB REQUEST</text>
+
+<!-- coordinator to workers dispatch -->
+<path d="M410 382 C360 425 270 425 240 475" class="edge" />
+<path d="M590 382 C640 425 730 425 760 475" class="edge"/>
+<circle r="4.5" class="packet"><animateMotion dur="2.3s" repeatCount="indefinite" path="M410 382 C360 425 270 425 240 475"/></circle>
+<circle r="4.5" class="packet"><animateMotion dur="2.8s" begin=".7s" repeatCount="indefinite" path="M590 382 C640 425 730 425 760 475"/></circle>
+<text x="305" y="435" class="tiny" text-anchor="middle">DISPATCH / PULL</text>
+<text x="695" y="435" class="tiny" text-anchor="middle">DISPATCH / PULL</text>
+
+<!-- heartbeat / result return -->
+<path d="M260 475 C290 445 390 445 445 382" class="edge"/>
+<path d="M740 475 C710 445 610 445 555 382" class="edge"/>
+<circle r="3.5" class="heartbeat"><animateMotion dur="3.1s" repeatCount="indefinite" path="M260 475 C290 445 390 445 445 382"/></circle>
+<circle r="3.5" class="heartbeat"><animateMotion dur="3.4s" begin="1s" repeatCount="indefinite" path="M740 475 C710 445 610 445 555 382"/></circle>
+<text x="500" y="462" class="tiny" text-anchor="middle">HEARTBEATS + EXECUTION RESULTS</text>
+
+<!-- persistence -->
+<path d="M665 326H770" class="edgeSolid"/>
+<circle r="4" class="packet"><animateMotion dur="1.9s" repeatCount="indefinite" path="M665 326 L765 326"/></circle>
+<text x="718" y="312" class="tiny" text-anchor="middle">PERSIST</text>
+<path d="M770 350H665" class="edge" />
+<circle r="3" class="heartbeat"><animateMotion dur="2.6s" begin=".9s" repeatCount="indefinite" path="M770 350 L665 350"/></circle>
+
+<text x="42" y="598" class="tiny">SOLID FLOW: SUBMISSION / PERSISTENCE</text>
+<circle cx="355" cy="594" r="3.5" class="packet"/><text x="366" y="598" class="tiny">DISPATCH</text>
+<circle cx="472" cy="594" r="3.5" class="heartbeat"/><text x="483" y="598" class="tiny">HEARTBEAT / RESULT</text>
+<text x="958" y="598" class="tiny" text-anchor="end">ONE COORDINATOR · INDEPENDENT WORKERS</text>
+</svg>
