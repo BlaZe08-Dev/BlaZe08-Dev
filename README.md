@@ -68,27 +68,15 @@ My interests sit at the intersection of **backend engineering, distributed syste
 - A CLI for job submission, status inspection, attempt history and worker-capacity monitoring.
 - Assignment-based round-robin and FIFO-pull dispatch policies, bounded retries and lease-based attempt handling.
 
-**Architecture at a glance**
+**Animated architecture**
 
-```text
-             CLI / Client
-                  |
-               HTTP API
-                  |
-          +---------------+
-          |  Coordinator  |
-          +---------------+
-             |         |
-       Dispatch     PostgreSQL
-             |
-       +-----+-----+
-       |           |
-   Worker A    Worker B
-   execute     execute
-   heartbeat   heartbeat
-```
+<div align="center">
 
-<sub>Current implementation, not a future-state diagram: one coordinator, independent worker processes and PostgreSQL.</sub>
+<img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/minicloud-architecture.svg" width="100%" alt="Animated MiniCloud architecture showing client submission, coordinator dispatch, worker execution and heartbeats, and PostgreSQL persistence" />
+
+<sub>Moving packets illustrate job submission, worker dispatch, heartbeats, execution results and durable-state updates. This is the current v1.1.0 topology—not a future-state design.</sub>
+
+</div>
 
 **Engineering note:** MiniCloud v1.1.0 is a learning-oriented, pre-production system. It is not multi-tenant and its API/worker endpoints do not yet provide authentication, authorization or TLS. It must not be exposed to untrusted networks. AI-assisted dispatch and coordinator failover remain post-V1 design ideas, not implemented capabilities.
 
