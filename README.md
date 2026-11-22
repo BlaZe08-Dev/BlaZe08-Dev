@@ -102,6 +102,8 @@ A selection of individual and collaborative work. Team projects are labelled as 
 
 <sub>GO · DISTRIBUTED SYSTEMS</sub>
 
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/minicloud.svg" width="100%" height="48" alt="MiniCloud dispatch animation" />
+
 A distributed job-execution platform built to explore coordinator/worker orchestration, durable job state, dispatch policies and failure handling.
 
 <a href="https://github.com/BlaZe08-Dev/MiniCloud">SOURCE ↗</a>
@@ -112,6 +114,8 @@ A distributed job-execution platform built to explore coordinator/worker orchest
 <strong>02 / HARMONIQ</strong>
 
 <sub>PYTHON · FLASK · JAVASCRIPT · JAMENDO API</sub>
+
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/harmoniq.svg" width="100%" height="48" alt="Harmoniq audio waveform animation" />
 
 A music discovery and playback web app with search, queue and playlist workflows, playback controls, recently played tracks and a responsive listening interface.
 
@@ -133,6 +137,8 @@ A music discovery and playback web app with search, queue and playlist workflows
 
 <sub>NEXT.JS · NODE / HONO · POSTGRESQL · FRAUD RISK</sub>
 
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/kavach.svg" width="100%" height="48" alt="Kavach Pay risk signal animation" />
+
 A simulated UPI-style payment experience with a deterministic fraud-risk engine that explains suspicious payment and collect-request signals in plain language. Hackathon prototype; payment rails and data are synthetic.
 
 <a href="https://github.com/raunaksahahere/kavachPay">SOURCE ↗</a>
@@ -143,6 +149,8 @@ A simulated UPI-style payment experience with a deterministic fraud-risk engine 
 <strong>04 / WEBTHREATDETECTION</strong>
 
 <sub>CYBERSECURITY · REACT · PYTHON · WEB3</sub>
+
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/webthreat.svg" width="100%" height="48" alt="WebThreatDetection scan animation" />
 
 An evidence-based investigation tool for suspicious URLs, messages, raw emails and QR codes, with explainable findings and an on-chain report-integrity registry.
 
@@ -157,6 +165,8 @@ An evidence-based investigation tool for suspicious URLs, messages, raw emails a
 
 <sub>MULTIPLAYER · GAME SYSTEMS · SOCIAL DEDUCTION</sub>
 
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/roguesignal.svg" width="100%" height="48" alt="RogueSignal multiplayer network animation" />
+
 A first-person multiplayer social-deduction game concept for 4–10 players, built around roles, tasks, sabotage and proximity-based interaction.
 
 <a href="https://github.com/raunaksahahere/RogueSignal">SOURCE ↗</a>
@@ -167,6 +177,8 @@ A first-person multiplayer social-deduction game concept for 4–10 players, bui
 <strong>06 / LOOPSPILL</strong>
 
 <sub>REMOTE SENSING · SATELLITE DATA · AIS</sub>
+
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/loopspill.svg" width="100%" height="48" alt="LoopSpill drift model animation" />
 
 A satellite-based oil-spill investigation workflow combining radar detection, backward drift modelling and vessel/AIS attribution to estimate likely spill origins.
 
@@ -181,6 +193,8 @@ A satellite-based oil-spill investigation workflow combining radar detection, ba
 
 <sub>EARTH OBSERVATION · TIME SERIES · GEOSPATIAL AI</sub>
 
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/loopsatellite.svg" width="100%" height="48" alt="LoopSatellite orbital observation animation" />
+
 A wetland-monitoring system for the East Kolkata Wetlands. Deterministic satellite-derived water measurements and seasonal anomaly detection support evidence-backed investigation.
 
 <a href="https://github.com/raunaksahahere/LoopSatellite">SOURCE ↗</a>
@@ -191,6 +205,8 @@ A wetland-monitoring system for the East Kolkata Wetlands. Deterministic satelli
 <strong>08 / JOCKY</strong>
 
 <sub>COLLABORATIVE PROJECT · PRIVATE REPOSITORY</sub>
+
+<br/><img src="https://raw.githubusercontent.com/BlaZe08-Dev/BlaZe08-Dev/main/assets/project-animations/jocky.svg" width="100%" height="48" alt="JOCKY collaboration status animation" />
 
 A collaborative project. The repository is private, so implementation details are intentionally not expanded here.
 
