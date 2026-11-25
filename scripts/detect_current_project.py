@@ -58,6 +58,8 @@ PROJECTS = {
 # A profile-repository GITHUB_TOKEN cannot read another user's private repository.
 
 def discover_repositories():
+    if not os.environ.get("REPOSITORY_DISCOVERY_TOKEN", "").strip():
+        raise SystemExit("Add REPOSITORY_DISCOVERY_TOKEN as a repository Actions secret to discover owned and collaborative repositories.")
     discovered = []
     page = 1
     while True:
@@ -112,7 +114,7 @@ def repository_commit_count(full_name):
     try:
         with urllib.request.urlopen(request, timeout=30) as response:
             link = response.headers.get("Link", "")
-            match = re.search(r'[?&]page=(\\d+)>; rel="last"', link)
+            match = re.search(r'[?&]page=(\d+)>; rel="last"', link)
             if match:
                 return int(match.group(1))
             return len(json.loads(response.read().decode("utf-8")))
@@ -250,7 +252,9 @@ def main():
         else:
             raise SystemExit(f"Unknown manual project selection: {OVERRIDE_INPUT}")
 
-    repositories = discover_repositories()\n    update_readme_directory(repositories)\n    activity = collect_activity(now)
+    repositories = discover_repositories()
+    update_readme_directory(repositories)
+    activity = collect_activity(now)
     eligible = [
         name for name, values in activity.items()
         if values["today"] >= 10
