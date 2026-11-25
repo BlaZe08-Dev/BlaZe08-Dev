@@ -139,7 +139,7 @@ def update_readme_directory(repositories):
         raise SystemExit("README is missing the automatic repository directory markers.")
     generated = render_repository_directory(repositories)
     section = f"{start}\n{generated}\n{end}"
-    pattern = re.escape(start) + r"[\\s\\S]*?" + re.escape(end)
+    pattern = re.escape(start) + r"[\s\S]*?" + re.escape(end)
     updated = re.sub(pattern, lambda _: section, readme, count=1)
     if updated != readme:
         readme_path.write_text(updated)
