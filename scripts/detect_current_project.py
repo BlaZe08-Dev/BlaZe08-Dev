@@ -127,7 +127,7 @@ def collect_activity(now):
 
 def main():
     now = datetime.now(IST)
-    state_path = Path(".github/current-project-state.json")
+    state_path = Path(".automation-state/current-project-state.json")
     state = json.loads(state_path.read_text()) if state_path.exists() else {
         "current_project": None, "manual_override": None
     }
@@ -204,53 +204,9 @@ def main():
         state_path.write_text(json.dumps(state, indent=2) + chr(10))
     published_at = state.get("last_published_at", now.isoformat(timespec="minutes"))
 
-    panel = f"""<!-- CURRENT-PROJECT:START -->
-<div align="center">
-  <sub>◉ CURRENTLY BUILDING · {status_label} · UPDATED {parse_dt(published_at).astimezone(IST).strftime("%d %b %Y, %I:%M %p IST")}</sub><br/>
-  <a href="{project_url}"><img src="https://img.shields.io/badge/FOCUS-{urllib.parse.quote(project_label.upper(), safe='')}-8DA697?style=for-the-badge&logo=github&logoColor=070708" alt="Current project: {project_label}" /></a><br/>
-  <code>{today_label}</code> &nbsp;·&nbsp; <code>{week_label}</code><br/>
-  <sub>Last qualifying activity: {latest} · Threshold: 10 commits/day</sub>
-</div>
-<!-- CURRENT-PROJECT:END -->"""
-
-    readme_path = Path("README.md")
-    readme = readme_path.read_text()
-    marker_pattern = r"<!-- CURRENT-PROJECT:START -->.*?<!-- CURRENT-PROJECT:END -->"
-    if re.search(marker_pattern, readme, flags=re.S):
-        readme = re.sub(marker_pattern, lambda _: panel, readme, flags=re.S)
-    else:
-        anchor = "**Think clearly. Build deliberately. Keep iterating.**"
-        if anchor not in readme:
-            raise SystemExit("Could not find the README hero tagline insertion point.")
-        readme = readme.replace(anchor, anchor + "\n\n" + panel, 1)
-    readme_path.write_text(readme)
-
-    hero_path = Path("assets/profile-hero.svg")
-    hero = hero_path.read_text()
-    hero = re.sub(
-        r'(<text x="462" y="116" class="mono tiny muted">).*?(</text>)',
-        lambda m: m.group(1) + "01 / CURRENTLY BUILDING" + m.group(2),
-        hero, count=1,
-    )
-    hero = re.sub(
-        r'(<text x="462" y="154" class="ui white" font-size="29" font-weight="800">).*?(</text>)',
-        lambda m: m.group(1) + (current.upper() if current else "AWAITING SIGNAL") + m.group(2),
-        hero, count=1,
-    )
-    hero = re.sub(
-        r'(<text x="462" y="178" class="ui muted" font-size="12">).*?(</text>)',
-        lambda m: m.group(1) + subtitle.replace("&", "&amp;") + m.group(2),
-        hero, count=1,
-    )
-    hero = re.sub(
-        r'(<text x="485" y="210" class="mono" font-size="8" fill="#d2dfd5">).*?(</text>)',
-        lambda m: m.group(1) + hero_badge + m.group(2),
-        hero, count=1,
-    )
-    hero = hero.replace('<circle cx="475" cy="206" r="3" fill="#8da697" class="pulse"/>',
-                        f'<circle cx="475" cy="206" r="3" fill="{hero_badge_color}" class="pulse"/>')
-    hero_path.write_text(hero)
-    print(f"Selected current project: {current or 'none'} ({mode})")
+    # Detection remains private to the workflow state; do not publish it in README or SVG.
+    state_path.parent.mkdir(parents=True, exist_ok=True)
+    print(f"Internal current-project detection: {current or 'none'} ({mode})")
 
 if __name__ == "__main__":
     main()
