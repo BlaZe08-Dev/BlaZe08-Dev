@@ -50,13 +50,6 @@ jobs:
           restore-keys: |
             current-project-state-
 
-      - name: Initialize private detector state
-        run: |
-          mkdir -p .automation-state
-          if [ ! -f .automation-state/current-project-state.json ]; then
-            printf '{ "current_project": null, "manual_override": null, "daily_threshold": 10 }\\n' > .automation-state/current-project-state.json
-          fi
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
