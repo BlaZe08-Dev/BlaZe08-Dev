@@ -128,6 +128,7 @@ def collect_activity(now):
 def main():
     now = datetime.now(IST)
     state_path = Path(".automation-state/current-project-state.json")
+    state_path.parent.mkdir(parents=True, exist_ok=True)
     state = json.loads(state_path.read_text()) if state_path.exists() else {
         "current_project": None, "manual_override": None
     }
@@ -204,8 +205,7 @@ def main():
         state_path.write_text(json.dumps(state, indent=2) + chr(10))
     published_at = state.get("last_published_at", now.isoformat(timespec="minutes"))
 
-    # Detection remains private to the workflow state; do not publish it in README or SVG.
-    state_path.parent.mkdir(parents=True, exist_ok=True)
+    # Detection remains private to the workflow cache; nothing is published to the profile.
     print(f"Internal current-project detection: {current or 'none'} ({mode})")
 
 if __name__ == "__main__":
