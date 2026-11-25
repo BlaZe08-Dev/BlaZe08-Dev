@@ -2,5 +2,7 @@
   "current_project": null,
   "manual_override": null,
   "last_checked_at": null,
-  "daily_threshold": 10
+  "daily_threshold": 10,
+  "published_signature": "{\"current_project\": null, \"latest\": null, \"mode\": \"WAITING FOR SIGNAL\", \"seven_days\": 0, \"today\": 0}",
+  "last_published_at": "2026-11-25T13:59+05:30"
 }

@@ -31,9 +31,9 @@
 <!-- project focus -->
 <g filter="url(#shadow)">
  <rect x="438" y="88" width="706" height="144" rx="14" class="panel"/>
- <text x="462" y="116" class="mono tiny muted">01 / FLAGSHIP SYSTEM</text><text x="462" y="154" class="ui white" font-size="29" font-weight="800">MINICLOUD</text>
- <text x="462" y="178" class="ui muted" font-size="12">Distributed job execution · Go · PostgreSQL</text>
- <rect x="462" y="195" width="96" height="22" rx="11" fill="#26352b"/><circle cx="475" cy="206" r="3" fill="#8da697" class="pulse"/><text x="485" y="210" class="mono" font-size="8" fill="#d2dfd5">V1.1.0</text>
+ <text x="462" y="116" class="mono tiny muted">01 / CURRENTLY BUILDING</text><text x="462" y="154" class="ui white" font-size="29" font-weight="800">AWAITING SIGNAL</text>
+ <text x="462" y="178" class="ui muted" font-size="12">10 qualifying commits in one India-local day</text>
+ <rect x="462" y="195" width="96" height="22" rx="11" fill="#26352b"/><circle cx="475" cy="206" r="3" fill="#eda231" class="pulse"/><text x="485" y="210" class="mono" font-size="8" fill="#d2dfd5">WAITING</text>
  <g class="orbit"><circle cx="1025" cy="160" r="52" fill="none" stroke="#4e4d44" stroke-dasharray="3 7"/><circle cx="1025" cy="160" r="42" fill="none" stroke="#8da697" stroke-width="2" stroke-dasharray="75 190"/><circle cx="1025" cy="118" r="4" fill="#ed3426"/></g>
  <circle cx="1025" cy="160" r="28" fill="#202d25" stroke="#718f7d"/><path d="M1014 160h22m-11 -11v22" stroke="#c6d6ca" stroke-width="2" stroke-linecap="round"/>
  <text x="1105" y="210" class="mono" font-size="8" fill="#aaa99f" text-anchor="end">COORDINATE / EXECUTE / RECOVER</text>
