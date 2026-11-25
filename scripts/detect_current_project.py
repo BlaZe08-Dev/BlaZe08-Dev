@@ -167,11 +167,6 @@ def main():
         current = state.get("current_project") if state.get("current_project") in PROJECTS else None
         mode = "RETAINED" if current else "WAITING FOR SIGNAL"
 
-    state["current_project"] = current
-    state["last_checked_at"] = now.isoformat(timespec="minutes")
-    state["daily_threshold"] = 10
-    state_path.write_text(json.dumps(state, indent=2) + "\n")
-
     if current:
         values = activity[current]
         latest = values["latest"].strftime("%d %b %Y, %I:%M %p IST") if values["latest"] else "No recent commit"
@@ -208,7 +203,7 @@ def main():
         state["daily_threshold"] = 10
         state["published_signature"] = signature
         state["last_published_at"] = now.isoformat(timespec="minutes")
-        state_path.write_text(json.dumps(state, indent=2) + "\\n")
+        state_path.write_text(json.dumps(state, indent=2) + chr(10))
     published_at = state.get("last_published_at", now.isoformat(timespec="minutes"))
 
     panel = f"""<!-- CURRENT-PROJECT:START -->
