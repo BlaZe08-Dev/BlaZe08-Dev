@@ -100,9 +100,25 @@ def discover_repositories():
     return discovered
 
 def repository_commit_count(full_name):
-    query = urllib.parse.urlencode({"q": f"repo:{full_name}", "per_page": 1})
-    result = api_get(f"{API}/search/commits?{query}")
-    return int(result.get("total_count", 0)) if isinstance(result, dict) else 0
+    url = f"{API}/repos/{full_name}/commits?per_page=1"
+    request = urllib.request.Request(url, headers={
+        "Accept": "application/vnd.github+json",
+        "Authorization": f"Bearer {TOKEN}",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "BlaZe08-Dev-repository-index",
+    })
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            link = response.headers.get("Link", "")
+            match = re.search(r'[?&]page=(\\d+)>; rel="last"', link)
+            if match:
+                return int(match.group(1))
+            return len(json.loads(response.read().decode("utf-8")))
+    except urllib.error.HTTPError as error:
+        if error.code in (403, 404):
+            print(f"Commit count unavailable ({error.code}): {full_name}")
+            return None
+        raise
 
 def render_repository_directory(repositories):
     rows = []
