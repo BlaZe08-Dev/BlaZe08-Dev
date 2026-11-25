@@ -42,25 +42,29 @@ jobs:
         with:
           persist-credentials: true
 
+      - name: Restore private detector state
+        uses: actions/cache@v4
+        with:
+          path: .automation-state
+          key: current-project-state-${{ github.run_id }}
+          restore-keys: |
+            current-project-state-
+
+      - name: Initialize private detector state
+        run: |
+          mkdir -p .automation-state
+          if [ ! -f .automation-state/current-project-state.json ]; then
+            printf '{ "current_project": null, "manual_override": null, "daily_threshold": 10 }\\n' > .automation-state/current-project-state.json
+          fi
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Detect active project and update profile
+      - name: Detect active project internally
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROJECT_OVERRIDE: ${{ inputs.project }}
         run: python scripts/detect_current_project.py
 
-      - name: Commit profile changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md assets/profile-hero.svg .github/current-project-state.json
-          if git diff --cached --quiet; then
-            echo "No profile changes to publish."
-            exit 0
-          fi
-          git commit -m "chore(profile): refresh currently building project"
-          git push
