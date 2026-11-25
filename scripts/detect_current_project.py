@@ -3,11 +3,9 @@
 import json
 import os
 import re
-import subprocess
 import urllib.error
 import urllib.parse
 import urllib.request
-from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
