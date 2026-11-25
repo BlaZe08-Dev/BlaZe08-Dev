@@ -58,6 +58,17 @@ jobs:
       - name: Detect active project internally
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY_DISCOVERY_TOKEN: ${{ secrets.REPOSITORY_DISCOVERY_TOKEN }}
           PROJECT_OVERRIDE: ${{ inputs.project }}
         run: python scripts/detect_current_project.py
+
+      - name: Commit generated repository index
+        run: |
+          if ! git diff --quiet -- README.md; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore(profile): refresh repository directory"
+            git push
+          fi
 
