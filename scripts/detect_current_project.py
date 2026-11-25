@@ -72,6 +72,8 @@ def discover_repositories():
             break
         for repo in repos:
             full_name = repo.get("full_name", "")
+            if repo.get("private"):
+                continue  # Never expose private repository names in a public profile README.
             if not full_name or full_name.lower() == f"{OWNER}/{OWNER}".lower():
                 continue
             owner_login = (repo.get("owner") or {}).get("login", "")
