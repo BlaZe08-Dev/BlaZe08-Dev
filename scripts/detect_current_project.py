@@ -111,9 +111,10 @@ def collect_activity(now):
                 committed_at = parse_dt(date_text).astimezone(IST)
                 if committed_at > now:
                     continue
-                weekly += 1
-                if latest is None or committed_at > latest:
-                    latest = committed_at
+                if committed_at >= now - timedelta(days=7):
+                    weekly += 1
+                    if latest is None or committed_at > latest:
+                        latest = committed_at
                 if committed_at.date() == now.date():
                     daily += 1
             if len(commits) < 100:
@@ -195,9 +196,24 @@ def main():
         hero_badge = "WAITING"
         hero_badge_color = "#eda231"
 
+    signature = json.dumps({
+        "current_project": current,
+        "mode": mode,
+        "today": values["today"],
+        "seven_days": values["seven_days"],
+        "latest": values["latest"].isoformat() if values["latest"] else None,
+    }, sort_keys=True)
+    if state.get("published_signature") != signature:
+        state["current_project"] = current
+        state["daily_threshold"] = 10
+        state["published_signature"] = signature
+        state["last_published_at"] = now.isoformat(timespec="minutes")
+        state_path.write_text(json.dumps(state, indent=2) + "\\n")
+    published_at = state.get("last_published_at", now.isoformat(timespec="minutes"))
+
     panel = f"""<!-- CURRENT-PROJECT:START -->
 <div align="center">
-  <sub>◉ CURRENTLY BUILDING · {status_label} · UPDATED {now.strftime("%d %b %Y, %I:%M %p IST")}</sub><br/>
+  <sub>◉ CURRENTLY BUILDING · {status_label} · UPDATED {parse_dt(published_at).astimezone(IST).strftime("%d %b %Y, %I:%M %p IST")}</sub><br/>
   <a href="{project_url}"><img src="https://img.shields.io/badge/FOCUS-{urllib.parse.quote(project_label.upper(), safe='')}-8DA697?style=for-the-badge&logo=github&logoColor=070708" alt="Current project: {project_label}" /></a><br/>
   <code>{today_label}</code> &nbsp;·&nbsp; <code>{week_label}</code><br/>
   <sub>Last qualifying activity: {latest} · Threshold: 10 commits/day</sub>
