@@ -221,7 +221,25 @@ A collaborative project. The repository is private, so implementation details ar
 Automatically discovered repositories, grouped by ownership and ranked by total repository commits. Projects owned by my account are listed as independent work; repositories owned by others are listed as collaborative work.
 
 <!-- AUTO-REPOSITORY-DIRECTORY:START -->
-_Repository index will be populated by GitHub Actions after repository discovery is configured._
+### Independent projects
+
+| Repository | Description | Commits | Status |
+|---|---|---:|---|
+| [MiniCloud](https://github.com/BlaZe08-Dev/MiniCloud) | Distributed job execution · Go · PostgreSQL | 763 | Active |
+| [vista](https://github.com/BlaZe08-Dev/vista) | Project repository | 121 | Active |
+| [Crime-Intel](https://github.com/BlaZe08-Dev/Crime-Intel) | Project repository | 43 | Active |
+| [Harmoniq](https://github.com/BlaZe08-Dev/Harmoniq) | Music discovery · Flask · JavaScript | 41 | Active |
+| [Smart-AI-expense-Categorizer](https://github.com/BlaZe08-Dev/Smart-AI-expense-Categorizer) | Project repository | 10 | Active |
+| [cafe-website](https://github.com/BlaZe08-Dev/cafe-website) | Amara — Lounge & Cafe website (Kolkata) | 3 | Active |
+| [salon-demo](https://github.com/BlaZe08-Dev/salon-demo) | Beauty salon website template (Vite + React, salon.json-driven) | 3 | Active |
+
+### Collaborative projects
+
+| Repository | Description | Commits | Status |
+|---|---|---:|---|
+| [kavachPay](https://github.com/raunaksahahere/kavachPay) | Payment risk analysis · Next.js · PostgreSQL | 40 | Active |
+| [webThreatDetection](https://github.com/raunaksahahere/webThreatDetection) | AI-powered web threat detection & digital trust intelligence: SSRF-safe URL/TLS/message analysis, evidence-grounded AI explanations, on-chain report integrity with independent verification | 35 | Active |
+| [LoopSatellite](https://github.com/raunaksahahere/LoopSatellite) | Wetland monitoring · Earth observation | 32 | Active |
 <!-- AUTO-REPOSITORY-DIRECTORY:END -->
 
 ## ⬡ 03 — THE ENGINEERING TOOLCHAIN
