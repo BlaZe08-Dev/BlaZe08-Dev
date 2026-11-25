@@ -149,8 +149,8 @@ def main():
     eligible.sort(
         key=lambda name: (
             activity[name]["today"],
-            activity[name]["latest"] or datetime.min.replace(tzinfo=IST),
             activity[name]["seven_days"],
+            activity[name]["latest"] or datetime.min.replace(tzinfo=IST),
         ),
         reverse=True,
     )
