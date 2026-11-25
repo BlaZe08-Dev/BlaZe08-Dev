@@ -8,15 +8,6 @@
 
 **Think clearly. Build deliberately. Keep iterating.**
 
-<!-- CURRENT-PROJECT:START -->
-<div align="center">
-  <sub>◉ CURRENTLY BUILDING · AUTOMATIC DETECTION · UPDATED 25 Nov 2026, 02:00 PM IST</sub><br/>
-  <a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/FOCUS-AWAITING%20ACTIVITY%20SIGNAL-8DA697?style=for-the-badge&logo=github&logoColor=070708" alt="Current project: AWAITING ACTIVITY SIGNAL" /></a><br/>
-  <code>10 COMMITS TO ACTIVATE</code> &nbsp;·&nbsp; <code>CHECKED HOURLY</code><br/>
-  <sub>Last qualifying activity: No project has reached the daily threshold yet · Threshold: 10 commits/day</sub>
-</div>
-<!-- CURRENT-PROJECT:END -->
-
 <p>
   <a href="https://github.com/BlaZe08-Dev"><img src="https://img.shields.io/badge/GITHUB-BlaZe08--Dev-8DA697?style=flat-square&logo=github&logoColor=black" alt="GitHub" /></a>
   <img src="https://komarev.com/ghpvc/?username=BlaZe08-Dev&style=flat-square&color=8DA697&label=PROFILE+VIEWS" alt="Profile views" />
