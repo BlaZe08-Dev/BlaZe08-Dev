@@ -14,7 +14,7 @@ OWNER = "BlaZe08-Dev"
 USERNAME = "BlaZe08-Dev"
 IST = ZoneInfo("Asia/Kolkata")
 API = "https://api.github.com"
-TOKEN = os.environ["GITHUB_TOKEN"]
+TOKEN = os.environ.get("REPOSITORY_DISCOVERY_TOKEN") or os.environ["GITHUB_TOKEN"]
 OVERRIDE_INPUT = os.environ.get("PROJECT_OVERRIDE", "").strip()
 
 PROJECTS = {
@@ -56,6 +56,96 @@ PROJECTS = {
 }
 # JOCKY is intentionally excluded: it is private and belongs to another owner.
 # A profile-repository GITHUB_TOKEN cannot read another user's private repository.
+
+def discover_repositories():
+    discovered = []
+    page = 1
+    while True:
+        repos = api_get(f"{API}/user/repos?" + urllib.parse.urlencode({
+            "affiliation": "owner,collaborator,organization_member",
+            "visibility": "all",
+            "sort": "updated",
+            "per_page": 100,
+            "page": page,
+        }))
+        if not repos:
+            break
+        for repo in repos:
+            full_name = repo.get("full_name", "")
+            if not full_name or full_name.lower() == f"{OWNER}/{OWNER}".lower():
+                continue
+            owner_login = (repo.get("owner") or {}).get("login", "")
+            kind = "PERSONAL" if owner_login.lower() == USERNAME.lower() else "COLLABORATIVE"
+            name = repo.get("name") or full_name
+            existing = next((k for k, v in PROJECTS.items() if v["repo"].lower() == full_name.lower()), None)
+            key = existing or (name if name not in PROJECTS else full_name)
+            config = PROJECTS.get(key, {})
+            discovered.append({
+                "key": key, "name": name, "full_name": full_name,
+                "url": repo.get("html_url") or f"https://github.com/{full_name}",
+                "owner": owner_login, "kind": kind,
+                "private": bool(repo.get("private")), "archived": bool(repo.get("archived")),
+                "description": repo.get("description") or config.get("subtitle") or "Project repository",
+                "updated_at": repo.get("pushed_at") or repo.get("updated_at") or "",
+            })
+            if key not in PROJECTS:
+                PROJECTS[key] = {
+                    "repo": full_name,
+                    "url": repo.get("html_url") or f"https://github.com/{full_name}",
+                    "subtitle": repo.get("description") or "GitHub project",
+                }
+        if len(repos) < 100:
+            break
+        page += 1
+    return discovered
+
+def repository_commit_count(full_name):
+    query = urllib.parse.urlencode({"q": f"repo:{full_name}", "per_page": 1})
+    result = api_get(f"{API}/search/commits?{query}")
+    return int(result.get("total_count", 0)) if isinstance(result, dict) else 0
+
+def render_repository_directory(repositories):
+    rows = []
+    for item in repositories:
+        try:
+            item["commit_count"] = repository_commit_count(item["full_name"])
+        except Exception as error:
+            print(f"Commit count unavailable for {item['full_name']}: {error}")
+            item["commit_count"] = None
+
+    for kind, heading in (("PERSONAL", "Independent projects"), ("COLLABORATIVE", "Collaborative projects")):
+        group = [r for r in repositories if r["kind"] == kind]
+        group.sort(key=lambda r: (r["commit_count"] if r["commit_count"] is not None else -1, r["updated_at"]), reverse=True)
+        rows.append(f"### {heading}\n")
+        if not group:
+            rows.append("_No accessible repositories found in this category._\n")
+            continue
+        rows.append("| Repository | Description | Commits | Status |\n|---|---|---:|---|")
+        for item in group:
+            count = f"{item['commit_count']:,}" if item["commit_count"] is not None else "Unavailable"
+            status = "Archived" if item["archived"] else ("Private" if item["private"] else "Active")
+            label = item["name"].replace("|", "\\|")
+            description = (item["description"] or "Project repository").replace("|", "\\|").replace("\n", " ")
+            rows.append(f"| [{label}]({item['url']}) | {description} | {count} | {status} |")
+        rows.append("")
+    return "\n".join(rows).strip()
+
+def update_readme_directory(repositories):
+    readme_path = Path("README.md")
+    readme = readme_path.read_text()
+    start = "<!-- AUTO-REPOSITORY-DIRECTORY:START -->"
+    end = "<!-- AUTO-REPOSITORY-DIRECTORY:END -->"
+    if start not in readme or end not in readme:
+        raise SystemExit("README is missing the automatic repository directory markers.")
+    generated = render_repository_directory(repositories)
+    section = f"{start}\n{generated}\n{end}"
+    pattern = re.escape(start) + r"[\\s\\S]*?" + re.escape(end)
+    updated = re.sub(pattern, lambda _: section, readme, count=1)
+    if updated != readme:
+        readme_path.write_text(updated)
+        print(f"Updated README repository directory with {len(repositories)} repositories.")
+    else:
+        print("README repository directory is already up to date.")
 
 def api_get(url):
     request = urllib.request.Request(
@@ -142,7 +232,7 @@ def main():
         else:
             raise SystemExit(f"Unknown manual project selection: {OVERRIDE_INPUT}")
 
-    activity = collect_activity(now)
+    repositories = discover_repositories()\n    update_readme_directory(repositories)\n    activity = collect_activity(now)
     eligible = [
         name for name, values in activity.items()
         if values["today"] >= 10
