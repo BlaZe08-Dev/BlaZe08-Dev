@@ -216,6 +216,14 @@ A collaborative project. The repository is private, so implementation details ar
 </tr>
 </table>
 
+## ◈ 02.5 — REPOSITORY INDEX
+
+Automatically discovered repositories, grouped by ownership and ranked by total repository commits. Projects owned by my account are listed as independent work; repositories owned by others are listed as collaborative work.
+
+<!-- AUTO-REPOSITORY-DIRECTORY:START -->
+_Repository index will be populated by GitHub Actions after repository discovery is configured._
+<!-- AUTO-REPOSITORY-DIRECTORY:END -->
+
 ## ⬡ 03 — THE ENGINEERING TOOLCHAIN
 
 <div align="center">
