@@ -241,6 +241,7 @@ Automatically discovered repositories, grouped by ownership and ranked by total 
 | [kavachPay](https://github.com/raunaksahahere/kavachPay) | Payment risk analysis · Next.js · PostgreSQL | 40 | Active |
 | [webThreatDetection](https://github.com/raunaksahahere/webThreatDetection) | AI-powered web threat detection & digital trust intelligence: SSRF-safe URL/TLS/message analysis, evidence-grounded AI explanations, on-chain report integrity with independent verification | 35 | Active |
 | [LoopSatellite](https://github.com/raunaksahahere/LoopSatellite) | Wetland monitoring · Earth observation | 32 | Active |
+| [flakeprint](https://github.com/raunaksahahere/flakeprint) | Project repository | 30 | Active |
 <!-- AUTO-REPOSITORY-DIRECTORY:END -->
 
 ## ⬡ 03 — THE ENGINEERING TOOLCHAIN
